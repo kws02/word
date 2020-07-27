@@ -1,0 +1,135 @@
+﻿<div>
+    <ul class="list">
+        <li>
+            <div class="headLeft2"><input type="button" value="처음으로" class="first" onclick="location.href='/Home/Main'" /></div>
+            <div>@Html.TextBox("search", (string)@ViewBag.Search, new {style="text-transform:lowercase;", onkeyup="$(this).val($(this).val().toLowerCase());", onkeypress="if(event.keyCode==13)search();" }) <input type="button" value="검색" class="first2" onclick="search()" /></div>
+        </li>
+    </ul>
+</div>
+<div class="more" onclick="more('N')">다음보기</div>
+
+<script type="text/javascript">
+    var list = {};
+    var totalCount = 0;
+    var page = @ViewBag.Page;
+
+    $(document).ready(function ()
+    {
+        var reqTop = @ViewBag.Scroll;
+        
+        InitJson();
+
+        if (reqTop > 0)
+            $(window).scrollTop(reqTop);
+    });
+
+    function InitJson()
+    {
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            data: { "All": "Y", "Search": $("#search").val() },
+            async: false,
+            url: "/Home/ReviewJson",
+            success: function (data)
+            {
+                list = data;
+                totalCount = data.length;
+
+                more("Y");
+            }
+        });
+    }
+
+    function more(first)
+    {
+        var html = "";
+        var count = 0;
+        var startPage = page * 40;
+        var endPage = (page + 1) * 40;
+
+        if (first == "Y")
+        {
+            startPage = 0;
+            $(".list li").not(".list li:first").remove();
+        }
+
+        for (var i = startPage; i < endPage; i++)
+        {
+            if (i >= list.length)
+                break;
+
+            html += "<li>";
+            html += "   <div>";
+            html += "       <div class='left'>" + list[i].단어 + " [" + list[i].한글발음 + "]</div>";
+            html += "       <div style='height:40px;'></div>";
+            html += "   </div>";
+            html += "   <div>";
+            html += "       <div class='left'>";
+            html += "           <span name='original'>" + list[i].뜻 + "</span>";
+            html += "       </div>";
+            html += "       <div>";
+            html += "       <input id='b" + list[i].순번 + "' type='button' value='수정' class='button' onclick=\"redirect('" + list[i].순번 + "');\" />";
+            html += "       <input id='d" + list[i].순번 + "' type='button' value='삭제' class='button' onclick=\"del('" + list[i].순번 + "');\" />";
+            html += "       </div>";
+            html += "   </div>";
+            html += "</li>";
+
+            count++;
+        };
+
+        $(".list").append(html);
+
+        totalCount -= count;
+        page++;
+
+        if (totalCount > 0)
+            $(".more").css("display", "block");
+        else
+            $(".more").css("display", "none");
+    }
+
+    function redirect(seq)
+    {
+        location.href = "/Home/Insert?Page=" + (page - 1) + "&Seq=" + seq + "&Scroll=" + $(window).scrollTop() + "&Search=" + $("#search").val() + "&Url=/Home/Library";
+    }
+
+    function del(seq)
+    {
+        if (!confirm("정말 삭제하시겠습니까?"))
+            return;
+
+        $.ajax({
+            type: "GET",
+            dataType: "text",
+            data: { "Seq": seq },
+            async: false,
+            url: "/Home/Delete",
+            success: function (data)
+            {
+                if(data == "OK")
+                    search();
+                else
+                    alert(data);
+            }
+        });  
+    }
+
+    function search()
+    {
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            data: { "All": "Y", "Search": $("#search").val() },
+            async: false,
+            url: "/Home/ReviewJson",
+            success: function (data)
+            {
+                list = data;
+                totalCount = data.length;
+
+                more("Y");
+            }
+        });            
+    }
+</script>

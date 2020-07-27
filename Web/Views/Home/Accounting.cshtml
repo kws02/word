@@ -1,0 +1,144 @@
+﻿@using Web.Models
+@model List<전산회계운용사>
+
+@{
+    int cc = 1;
+}
+@using (Html.BeginForm("Accounting", "Home", FormMethod.Post))
+{
+    foreach (var m in Model)
+    {
+        if (cc == 1)
+        {
+            @Html.Raw("<table id='m" + cc + "' style='display: block'>");
+        }
+        else
+        {
+            @Html.Raw("<table id='m" + cc + "' style='display: none'>");
+        }
+        @Html.Raw("<tr><td>");
+        @Html.Raw(@cc + ". " + @m.문제);
+        @Html.Raw("</td></tr>");
+        @Html.Raw("<tr><td>");
+        if (m.이미지번호 != 0)
+        {
+            @Html.Raw("<img src='" + Url.Content("~/Content/Image/" + m.년도 + m.회차 + "/PIC" + m.이미지번호 + ".gif") + "'/>");
+        }
+        @Html.Raw("</td></tr>");
+        @Html.Raw("<tr><td>");
+        foreach (var n in m.선택)
+        {
+            if (n.IndexOf(".gif") == -1)
+            {
+                @Html.Raw(n + "<br/>");
+            }
+            else
+            {
+                @Html.Raw(n.Substring(0, n.IndexOf(" ")) + "<img src='" + Url.Content("~/Content/Image/" + m.년도 + m.회차 + "/" + n.Substring(n.IndexOf("PIC"))) + "'/><br/>");
+            }
+        }
+        @Html.Hidden("true", m.정답번호);
+        @Html.Raw("</td></tr>");
+        @Html.Raw("<tr><td>");
+        @Html.Raw("<input type='radio' name='answer' value='1' /> 1");
+        @Html.Raw("<input type='radio' name='answer' value='2' /> 2");
+        @Html.Raw("<input type='radio' name='answer' value='3' /> 3");
+        @Html.Raw("<input type='radio' name='answer' value='4' /> 4");
+        @Html.Raw("</td></tr>");
+        @Html.Raw("<tr><td align='right'>");
+        @Html.Raw("<span name='openers' style='display: none; '>정답 : " + @m.정답번호 + "번</span>");
+        @Html.Raw("<input type='button' value='다음' onclick='right()' />");
+        @Html.Raw("</td></tr>");
+        @Html.Raw("</table>");
+        cc++;
+    }
+    @Html.Hidden("selects", "")
+    @Html.Hidden("trues", "")
+    <div id="result" style="display:none">
+        <div id="r1"></div>
+        <div id="r2"></div>
+    </div>
+}
+<script language="javascript">
+    //<![CDATA[
+    var cc = 1;
+    var btnClick = false;
+
+    $(document).ready(function () {
+
+    });
+
+    function right() {
+        if (btnClick) return;
+        btnClick = true;
+
+        var prev = "#m" + cc;
+        var next = "#m" + (++cc);
+
+        if (cc <= 40) {
+            if ($(prev).find("input[name='true']").val() != $(prev).find("input:radio[name='answer']:checked").val()) {
+                $(prev).find("span[name='openers']").css("display", "block");
+
+                setTimeout(function () {
+                    $(prev).css("display", "none");
+                    $(next).css("display", "block");
+
+                    if (!$("#selects").val())
+                        $("#selects").val($(prev).find("input:radio[name='answer']:checked").val());
+                    else
+                        $("#selects").val($("#selects").val() + "," + $(prev).find("input:radio[name='answer']:checked").val());
+
+                    if (!$("#trues").val())
+                        $("#trues").val($(prev).find("input[name='true']").val());
+                    else
+                        $("#trues").val($("#trues").val() + "," + $(prev).find("input[name='true']").val());
+
+                    btnClick = false;
+                }, 2000)
+            }
+            else {
+                $(prev).css("display", "none");
+                $(next).css("display", "block");
+
+                if (!$("#selects").val())
+                    $("#selects").val($(prev).find("input:radio[name='answer']:checked").val());
+                else
+                    $("#selects").val($("#selects").val() + "," + $(prev).find("input:radio[name='answer']:checked").val());
+
+                if (!$("#trues").val())
+                    $("#trues").val($(prev).find("input[name='true']").val());
+                else
+                    $("#trues").val($("#trues").val() + "," + $(prev).find("input[name='true']").val());
+
+                btnClick = false;
+            }
+        }
+        else
+        {
+            if ($(prev).find("input[name='true']").val() != $(prev).find("input:radio[name='answer']:checked").val())
+                $(prev).find("span[name='openers']").css("display", "block");
+
+            var cc1 = 0;
+            var cc2 = 0;
+
+            $("#result").css("display", "block");
+
+            var selects = $("#selects").val().split(",");
+            var trues = $("#trues").val().split(",");
+
+            for (var i = 0; i < selects.length; i++) {
+                if (selects[i] == trues[i]) {
+                    if (i < 20)
+                        cc1++;
+                    else
+                        cc2++;
+                }
+            }
+
+            $("#r1").text("재무 : " + cc1 + "건");
+            $("#r2").text("원가 : " + cc2 + "건");
+        }
+
+    }
+//]]>
+</script>

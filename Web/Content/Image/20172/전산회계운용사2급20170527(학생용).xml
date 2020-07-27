@@ -1,0 +1,2254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet type="text/xsl" href="전산회계운용사2급20170527(학생용).xsl"?>
+<HWPML Style="export" SubVersion="10.0.0.0" Version="2.91">
+	<BODY>
+		<SECTION Id="0">
+			<P ColumnBreak="false" PageBreak="false" ParaShape="29" Style="14">
+				<TEXT CharShape="0">
+					<HEADER>
+						<PARALIST>
+							<P ParaShape="3" Style="15">
+								<TEXT CharShape="5">
+									<CHAR>전산회계운용사 2급      ◐ 2017년 05월 27일 필기 기출문제 ◑</CHAR>
+								</TEXT>
+								<TEXT CharShape="6">
+									<CHAR>            </CHAR>
+								</TEXT>
+								<TEXT CharShape="8">
+									<CHAR>전자문제집 CBT : www.comcbt.com</CHAR>
+								</TEXT>
+							</P>
+							<P ParaShape="3" Style="15">
+								<TEXT CharShape="7">
+									<POLYGON>
+										<SHAPEOBJECT InstId="2026670410"/>
+									</POLYGON>
+								</TEXT>
+								<TEXT CharShape="9">
+									<CHAR/>
+								</TEXT>
+							</P>
+						</PARALIST>
+					</HEADER>
+					<FOOTER>
+						<PARALIST>
+							<P ParaShape="4" Style="15">
+								<TEXT CharShape="3">
+									<POLYGON>
+										<SHAPEOBJECT InstId="2026670411"/>
+									</POLYGON>
+								</TEXT>
+								<TEXT CharShape="4">
+									<CHAR/>
+								</TEXT>
+							</P>
+							<P ParaShape="17" Style="15">
+								<TEXT CharShape="8">
+									<CHAR>최강 자격증 기출문제 전자문제집 CBT : www.comcbt.com</CHAR>
+								</TEXT>
+							</P>
+						</PARALIST>
+					</FOOTER>
+				</TEXT>
+				<TEXT CharShape="16">
+					<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+						<SHAPEOBJECT InstId="1291457222"/>
+						<ROW>
+							<CELL BorderFill="4" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1500" Protect="false" RowAddr="0" RowSpan="1" Width="21259">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="20" Style="0">
+										<TEXT CharShape="15">
+											<CHAR>1과목 : 재무회계</CHAR>
+										</TEXT>
+										<TEXT CharShape="10"/>
+									</P>
+								</PARALIST>
+							</CELL>
+						</ROW>
+					</TABLE>
+					<CHAR/>
+				</TEXT>
+			</P>
+			<P ParaShape="23" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>1. 수정분개 전 당기순이익이 ￦600,000이고 기말수정사항이 다음과 같을 때 수정분개 후 정확한 당기순이익은 얼마인가?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   </CHAR>
+					<PICTURE Reverse="false">
+						<SHAPEOBJECT InstId="1291457223"/>
+						<EFFECTS/>
+					</PICTURE>
+					<CHAR/>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						① ￦455,000<TAB/><TAB/>② ￦515,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						③ ￦555,000<TAB/><TAB/>④ ￦665,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="24" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>2. 제조업을 영위하는 (주)상공이 결산 시 이자비용 미지급분에 대한 거래를 누락하였을 경우 재무제표에 미치는 영향으로 옳은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ① 매출총이익이 과소계상된다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ② 영업이익이 과대계상된다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ③ 비유동부채가 과소계상된다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ④ 당기순이익이 과대계상된다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="24" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>3. 다음의 기말 결산 시 작성한 수정전 시산표에 대한 설명으로 옳지 않은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   </CHAR>
+					<PICTURE Reverse="false">
+						<SHAPEOBJECT InstId="1291457224"/>
+						<EFFECTS/>
+					</PICTURE>
+					<CHAR/>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ① '라'는 기초자본금이다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ② '마'는 순매출액이다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ③ '바'는 매출원가이다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ④ 분개와 전기상의 오류가 없다면 '아'와 '자'의 금액은 일치한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="24" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>4. 다음은 포괄손익계산서에 기입된 자료의 일부이다. 당기순이익을 추정한 금액으로 옳은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   </CHAR>
+					<PICTURE Reverse="false">
+						<SHAPEOBJECT InstId="1291457225"/>
+						<EFFECTS/>
+					</PICTURE>
+					<CHAR/>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						① ￦600,000<TAB/><TAB/>② ￦800,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						③ ￦1,200,000<TAB/><TAB/>④ ￦2,000,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="24" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>5. 다음의 포괄손익계산서를 토대로 영업활동으로 인한 현금흐름 액을 계산하면 얼마인가?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   </CHAR>
+					<PICTURE Reverse="false">
+						<SHAPEOBJECT InstId="1291457226"/>
+						<EFFECTS/>
+					</PICTURE>
+					<CHAR/>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						① ￦10,000<TAB/><TAB/>② ￦15,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						③ ￦20,000<TAB/><TAB/>④ ￦30,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="24" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>6. (주)상공의 자료를 이용하여 포괄손익계산서에 표시되는 당기 순이익을 계산한 것으로 옳은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   </CHAR>
+					<PICTURE Reverse="false">
+						<SHAPEOBJECT InstId="1291457227"/>
+						<EFFECTS/>
+					</PICTURE>
+					<CHAR/>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						① ￦100,000<TAB/><TAB/>② ￦120,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						③ ￦170,000<TAB/><TAB/>④ ￦200,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="24" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>7. 액면가액 ￦100,000의 전환사채가 ￦100,000의 보통주로 전환 되는 기업활동이 현금흐름표에 표시되는 방법으로 옳은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ① 비현금거래로서 현금흐름표의 보충적 주석정보로 보고한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ② \100,000의 재무활동 현금흐름의 유출 및 \100,000의 재무 활동 현금흐름의 유입</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ③ \100,000의 재무활동 현금흐름의 유출 및 \100,000의 투자 활동 현금흐름의 유입</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ④ \100,000의 영업활동 현금흐름의 유출 및 \100,000의 투자 활동 현금흐름의 유입</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="24" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>8. 현금및현금성자산에 대한 설명으로 옳지 않은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ① 현금성자산은 단기의 현금수요를 충족하기 위한 목적으로 보유한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ② 현금성자산으로 분류되기 위해서는 확정된 금액이 현금으로의 전환이 용이하고, 가치변동의 위험이 경미하여야 한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ③ 취득당시 장기로 분류되었던 국ㆍ공채 중 결산일 현재 만기일이 3개월 이내인 국·공채를 현금성자산으로 분류한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ④ 상환일이 정해져 있고 취득일로부터 상환일까지 기간이 3개월 이내인 우선주의 경우 현금성자산으로 처리한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="24" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>9. 금융자산과 금융부채에 속하는 항목으로 바르게 나타낸 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ① (금융자산) 선급금, (금융부채) 미지급비용</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ② (금융자산) 미수금, (금융부채) 선수금</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ③ (금융자산) 단기대여금, (금융부채) 장기차입금</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="21" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>   ④ (금융자산) 재고자산, (금융부채) 선수수익</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>10. 금융자산에 대한 설명으로 옳지 않은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ① 통화 및 통화대용증권은 금융자산에 속한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ② 당기손익인식금융자산의 평가손익은 당기손익으로 인식한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ③ 당기손익인식금융자산의 취득에 따른 제 비용은 취득원가에 포함한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ④ 거래 상대방에게 현금 등을 수취할 계약상의 권리는 금융 자산에 속한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>11. 다음 거래 내용 중 회계처리 결과가 재무제표의 매출채권을 증가시키는 것끼리 짝지어진 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ① 타인발행 약속어음 수취, 어음의 부도</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ② 외상매출금의 실제 대손, 약속어음 배서양도</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ③ 약속어음 대금의 회수, 약속어음의 할인양도</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ④ 재화의 외상 판매, 약속어음의 수취</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>12. 다음 자료에서 외상매입금의 전기이월액으로 옳은 것은? (단, 부가세는 고려하지 않는다.)</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    </CHAR>
+					<PICTURE Reverse="false">
+						<SHAPEOBJECT InstId="1291457228"/>
+						<EFFECTS/>
+					</PICTURE>
+					<CHAR/>
+				</TEXT>
+			</P>
+			<P ParaShape="27" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						① \1,000,000<TAB/>② \2,000,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="27" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						③ \2,020,000<TAB/>④ \2,040,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>13. (주)상공기업은 대한상점에 상품 ￦1,000,000을 매출하고 대금은 신용카드로 결제 받았다. 이에 대한 분개로 옳은 것은? (단, 상품 거래는 3분법으로 처리한다.)</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ① (차) 외상매출금 1,000,000 (대) 매출 1,000,000</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ② (차) 받을어음 1,000,000 (대) 매출 1,000,000</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ③ (차) 가수금 1,000,000 (대) 매출 1,000,000</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ④ (차) 미수금 1,000,000 (대) 매출 1,000,000</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>14. (주)상공은 20×1년 1월 1일에 보유하고 있는 투자부동산인 토지 (장부금액 : ￦300,000)를 ￦500,000에 처분하였다. 처분대가 중 ￦200,000은 20×1년 1월 1일에 받았으며, 나머지 금액은 20×1년부터 매년 12월 31일에 ￦100,000씩 3회 분할하여 받기로 하였다. 20×1년 말 장기미수금의 장부금액은 얼마인가? (단, 토지 처분일 현재 유효이자율은 연 10％이고 기간 3, 10％, 연금현가계수는 2.4868이다. 답은 가장 근사치를 선택하라.)</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						① ￦148,680<TAB/><TAB/>② ￦156,680
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						③ ￦173,550<TAB/><TAB/>④ ￦200,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>15. ㈜상공은 공장건물을 신축하기로 하고, A건설사와 ￦7,000,000에 도급계약을 체결하였다. 신축 기간 중 차입금과 관련하여 자본화될 차입원가는 ￦500,000이며, 건물의 취득세로 납부한 금액은 ￦250,000일 때, 공장건물의 취득원가는 얼마인가?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="27" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						① ￦7,000,000<TAB/>② ￦7,250,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="27" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						③ ￦7,500,000<TAB/>④ ￦7,750,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>16. 다음은 (주)상공기업의 6월 중 A상품의 매입과 관련된 거래 내용이다. 6월 중 A상품의 순매입액은 얼마인가?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    </CHAR>
+					<PICTURE Reverse="false">
+						<SHAPEOBJECT InstId="1291457229"/>
+						<EFFECTS/>
+					</PICTURE>
+					<CHAR/>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						① ￦95,000<TAB/><TAB/>② ￦100,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						③ ￦105,000<TAB/><TAB/>④ ￦110,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>17. 결산일은 12월 말이다. 사채권면의 발행일이 20×1년 초인 사채를 20×1년 3월초에 발행하였다. 발행일의 시장이자율은 연 7％ 이며 사채발행비용을 포함한 유효이자율은 연 8％이다. 이 사채는 액면이자율 연 6％, 액면금액 ￦100,000, 매년 말 이자 지급, 만기 2년의 조건으로 발행되다. 20×1년 3월의 사채발행금액은 얼마인가? (2년, 8％ : 현가 0.8573 연금현가 1.7833) (단, 가장 근사치를 정답으로 한다.)</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						① ￦96,430<TAB/><TAB/>② ￦96,716
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						③ ￦97,716<TAB/><TAB/>④ ￦100,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>18. 사채발행에 대한 설명 중 옳지 않은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ① 사채발행가액＝만기사채원금의 현재가치＋표시이자액의 현재가치</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ② 할인발행 : 표시이자합계＞유효이자합계</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ③ 할증발행 : 표시이자율＞시장이자율</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ④ 할인발행 : 액면가액＞발행가액</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>19. 금융자산에 대한 전반적인 내용이다. 옳지 않은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ① 금융자산은 금융상품의 계약당사자가 되는 때에만 재무상태표에 인식한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ② 금융자산의 정형화된 매입이나 매도는 매매일 또는 결제일에 인식하거나 제거한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ③ ｢금융자산의 현금흐름에 대한 계약상 권리가 소멸한 경우｣ 또는 ｢금융자산을 양도하며 그 양도가 제거의 조건을 충족 하는 경우｣ 중 하나에 해당하는 경우에만 금융자산을 제거 한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ④ 만기보유금융자산의 취득과 직접 관련되는 거래원가는 발생 시점에서 당기손익으로 인식한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>20. 다음은 주당이익에 대한 내용이다. 옳지 않은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ① 기본주당이익은 회계기중 실제 발행된 보통주식수를 기준으로 산출한 것이며, 희석주당이익은 실제 발행된 보통주뿐만 아니라 보통주로 전환될 수 있는 잠재적보통주까지 감안하여 산출한 것으로 이는 기본주당이익에 비해 낮은 금액이 된다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ② 가중평균유통보통주식수는 기초의 유통보통주식수에 회계기간 중 취득된 자기주식수 또는 신규 발행된 보통주식수를 각각의 유통기간에 따른 가중치를 고려하여 조정한 보통주식수이다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ③ 희석주당이익을 계산하기 위해서는 모든 희석효과가 있는 잠재적보통주의 영향을 고려하여 지배기업의 보통주에 귀속 되는 당기순손익 및 가중평균유통보통주식수를 조정한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ④ 기본주당이익과 희석주당이익은 제시되는 모든 기간에 대하여 동등한 비중으로 제시하며, 기본주당이익과 희석주당이익이 부(－)의 금액(즉 주당손실)의 경우에는 표시하지 아니한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="18" Style="0">
+				<TEXT CharShape="12">
+					<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+						<SHAPEOBJECT InstId="1291457230"/>
+						<ROW>
+							<CELL BorderFill="4" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1500" Protect="false" RowAddr="0" RowSpan="1" Width="21259">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="20" Style="0">
+										<TEXT CharShape="15">
+											<CHAR>2과목 : 원가관리회계</CHAR>
+										</TEXT>
+										<TEXT CharShape="10"/>
+									</P>
+								</PARALIST>
+							</CELL>
+						</ROW>
+					</TABLE>
+					<CHAR/>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>21. 다음의 재공품 계정을 토대로 알 수 있는 당월 제품제조원가는 얼마인가?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    </CHAR>
+					<PICTURE Reverse="false">
+						<SHAPEOBJECT InstId="1291457231"/>
+						<EFFECTS/>
+					</PICTURE>
+					<CHAR/>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						① ￦600,000<TAB/><TAB/>② ￦800,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						③ ￦900,000<TAB/><TAB/>④ ￦1,000,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>22. 통제가능원가와 통제불가능원가에 대한 설명으로 옳지 않은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ① 통제가능하다고 하는 것은 경영자가 원가 발생액을 통제할 수 있는 재량권을 갖고 있음을 의미한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ② 관리계층에 따라 동일한 원가에 대한 통제가능성이 달라지지는 않는다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ③ 특정 과거에 이루어진 의사결정에 의해서 발생하는 감가상각비와 같은 비용은 이미 정해져 있거나, 이미 발생한 원가로서 경영자가 이를 통제할 수 없으므로 통제 불가능한 원가이다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ④ 통제가능원가의 경우 특정 부문 경영자의 성과를 평가하는데 활용한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>23. 공장전체 제조간접비 배부에 대한 내용이다. 옳지 않은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ① 공장전체 제조간접비 배부율을 사용한다면, 제조부문과 보조 부문에서 발생한 총제조간접비를 단일 배부기준에 의하여 개별 제품에 배부하게 된다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ② 공장전체 제조간접비 배부율을 사용한다면, 보조부문의 제조간접비를 제조부문에 배부하는 문제가 발생한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ③ 보조부문비를 직접배부법, 단계배부법, 상호배부법 중 어떤 배부방법에 의하여 제조부문에 배부하여도 공장전체의 제조간접비는 변함이 없다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ④ 공장전체 제조간접비 배부총액과 부문별 제조간접비 배부총액은 일치하나, 공장전체 제조간접비 배부보다 부문별 제조간접비 배부가 더 정확하다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>24. 다음은 ㈜상공의 원가계산표이다. 이에 대한 설명으로 옳지 않은 것은? (단, 제조지시서 #1과 제조지시서 #2는 완성되었다.)</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    </CHAR>
+					<PICTURE Reverse="false">
+						<SHAPEOBJECT InstId="1291457232"/>
+						<EFFECTS/>
+					</PICTURE>
+					<CHAR/>
+				</TEXT>
+			</P>
+			<P ParaShape="28" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ① ①＋ ② = 월초재공품재고액</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ② ⑧＋⑫＋⑯ = 당월총제조비용</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ③ ⑰＋⑱ = 당월제품제조원가</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ④ ⑲ = 월말재공품재고액</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>25. (주)한빛전자는 전화기를 제조하는 기업이며 서울에는 관리부, 영업부, 연구소가 있으며, 수원에는 제조공장이 있다. 다음 자료에 의하면 제조간접비 총액은 얼마인가? (단위 : 원)</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    </CHAR>
+					<PICTURE Reverse="false">
+						<SHAPEOBJECT InstId="1291457233"/>
+						<EFFECTS/>
+					</PICTURE>
+					<CHAR/>
+				</TEXT>
+			</P>
+			<P ParaShape="27" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						① ￦3,900,000<TAB/>② ￦6,200,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="27" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						③ ￦6,400,000<TAB/>④ ￦7,520,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>26. 다음은 제조간접비에 대한 자료이다. 제조간접비 배부차이는 얼마인가?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    </CHAR>
+					<PICTURE Reverse="false">
+						<SHAPEOBJECT InstId="1291457234"/>
+						<EFFECTS/>
+					</PICTURE>
+					<CHAR/>
+				</TEXT>
+			</P>
+			<P ParaShape="27" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						① ￦3,000 과대배부<TAB/>② ￦3,000 과소배부
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="27" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						③ ￦9,000 과대배부<TAB/>④ ￦9,000 과소배부
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>27. 다음은 제조경비에 대한 설명이다. (가)와 (나)에 들어갈 용어로 옳은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    </CHAR>
+					<PICTURE Reverse="false">
+						<SHAPEOBJECT InstId="1291457235"/>
+						<EFFECTS/>
+					</PICTURE>
+					<CHAR/>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ① (가) 직접제조경비 (나) 간접제조경비</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ② (가) 간접제조경비 (나) 직접제조경비</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ③ (가) 제조경비 (나) 소비비용</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ④ (가) 소비비용 (나) 제조경비</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>28. (주)상공의 다음 자료에 의하면 당기에 구매처에서 구입한 원재료는 얼마인가?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    </CHAR>
+					<PICTURE Reverse="false">
+						<SHAPEOBJECT InstId="1291457236"/>
+						<EFFECTS/>
+					</PICTURE>
+					<CHAR/>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						① ￦65,000<TAB/><TAB/>② ￦75,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						③ ￦190,000<TAB/><TAB/>④ ￦210,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>29. 다음에서 설명하는 보조부문비 배부 방법으로 옳은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    </CHAR>
+					<PICTURE Reverse="false">
+						<SHAPEOBJECT InstId="1291457237"/>
+						<EFFECTS/>
+					</PICTURE>
+					<CHAR/>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						① 단계배부법<TAB/><TAB/>② 상호배부법
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						③ 간접배부법<TAB/><TAB/>④ 직접배부법
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>30. 연산품 종합원가계산에 대한 설명으로 옳지 않은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ① 연산품 종합원가계산은 동일 재료로 동일 공정에서 생산되는 다른 종류의 제품으로서 주산물과 부산물을 명확히 구분하기 곤란한 경우에 적용한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ② 연산품이 개별적으로 식별 가능한 시점을 분리점이라 하며, 분리점 이전에 발생한 제조원가를 결합원가라 한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ③ 분리원가(즉 추가가공원가)는 개별 제품과 직접 관련하여 발생하므로 원가발생액을 각 제품별로 추적할 수 있기 때문에 원가회계상 별다른 문제를 일으키지 않는다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ④ 연산품의 제조원가는 결합원가의 배분원가에서 분리후의 추가가공원가를 차감한 잔액으로 계산된다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>31. 다음 종합원가계산에 대한 설명 중 옳지 않은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ① 종합원가계산에서 사용되는 원가계산표는 개별원가계산의 경우와는 달리 제품의 종류마다 작성할 필요가 없으며, 각 원가계산기간마다 1부를 작성하고 여기에다 그 기간에 발생한 모든 원가를 집계하면 된다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ② 종합원가계산은 표준규격 제품을 대량으로 연속생산하는 업종에 적합하다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ③ 종합원가계산은 경우(예: 조별)에 따라서 제조공정(부문)에 대한 직접비와 간접비의 구분이 필요하다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ④ 종합원가계산에서는 미완성된 특정 제품의 제조지시서별 원가계산표에 집계되어 있는 금액이 기말재공품이 된다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>32. 다음은 원가관리회계의 특성과 관련된 설명들이다. 이 중에서 옳지 않은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ① 원가관리회계는 기업의 경영자나 관리자에게 의사결정에 필요한 원가나 세부부문의 재무정보를 제공한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ② 원가관리회계는 원가측정 및 계산을 주로 다루는 원가회계와 원가정보를 의사결정에 사용하는 기법을 다루는 관리회계로 세분하기도 한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ③ 원가관리회계의 정보는 외부에 보고하는 재무회계의 정보와 아무런 관련성이 없다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ④ 원가관리회계는 각종 업무활동을 위해 원가를 측정/관리/ 분석하는 분야이므로 기업의 기획/구매/판매/생산/설계 등 모든 분야의 경영관리자에게 필수적인 지식이다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>33. 다음 중 개별원가계산에 대한 회계처리로서 옳은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ① 재료구입 시 (차) 재공품 xxx (대) 재료 xxx</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ② 노무비지급 시 (차) 재공품 xxx (대) 노무비 xxx</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ③ 제조간접비배부 시 (차) 재공품 xxx (대) 제조간접비 xxx</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ④ 생산완료 시 (차) 재공품 xxx (대) 제품 xxx</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>34. 제조간접비는 직접노무비 실제발생액을 기준으로 제품에 배부 하며, 제조간접비 실제발생 총액은 ￦8,400이다. 작업지시서 No.1의 제조원가는 얼마인가?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    </CHAR>
+					<PICTURE Reverse="false">
+						<SHAPEOBJECT InstId="1291457238"/>
+						<EFFECTS/>
+					</PICTURE>
+					<CHAR/>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						① ￦4,800<TAB/><TAB/>② ￦12,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						③ ￦16,800<TAB/><TAB/>④ ￦20,400
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>35. 다음 중 종합원가계산에 대한 설명으로 옳지 않은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ① 평균법이 비교적 간단하므로 원가통제에 항상 유리하다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ② 선입선출법에 따른 완성품 환산량은 평균법보다 항상 적거나 같다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ③ 평균법에 의할 경우에는 기초재공품원가와 당기발생원가를 동일하게 취급한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ④ 가격이나 재고수준이 안정적일 경우 평균법이나 선입선출법 중 어떤 방법으로 원가계산을 하여도 그 차이가 크지 않다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>36. 다음 중 선입선출법에 의한 종합원가계산에서 완성품환산량 단위당 원가는 어느 원가를 사용하여 계산하는가?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ① 당기투입원가</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ② 당기투입원가 ＋ 기초재공품원가</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ③ 당기투입원가 － 기말재공품원가</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ④ 당기투입원가 ＋ 기초재공품원가 － 기말재공품원가</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>37. 원가회계의 주요 목적으로 옳지 않은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ① 내부 의사결정</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ② 예산의 편성 및 통제</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ③ 기업내 여러 부문의 평가</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ④ 원가정보를 기업 외부의 회계정보 이용자에게 공시</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>38. 다음은 원가에 대한 설명이다. 옳지 않은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ① 기간비용은 특정제품과의 직접대응관계를 측정하는 것이 불가능하기 때문에 발생과 동시에 비용으로 계상된다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ② 직접원가는 컴퓨터의 하드디스크(Hard Disk), 선박의 엔진등과 같이 특정 원가대상에 직접관련 시킬 수 있는 원가이다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ③ 제조와 관련된 기계장치, 공구와 기구는 소멸되지 않으므로 원가로 구성될 수 없다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ④ 원가의 분류상 기초원가(기본원가)에도 포함되고 전환원가 (가공원가)에도 포함되는 원가는 직접노무비이다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>39. 다음 계정의 기입 내용에 대한 설명으로 옳은 것은?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    </CHAR>
+					<PICTURE Reverse="false">
+						<SHAPEOBJECT InstId="1291457239"/>
+						<EFFECTS/>
+					</PICTURE>
+					<CHAR/>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ① 절단부문비는 예정배부액보다 실제발생액이 더 많았다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ② 조립부문비는 실제발생액보다 예정배부액이 과대 배부 되었다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ③ 안분(비례배분)법은 재공품, 제품, 매출원가의 금액에 비례 하여 부문비배부차이를 안분하는 방법이다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="26" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    ④ 매출원가조정법에 의할 경우 (차)부문비배부차이 40,000 (대)매출원가 40,000으로 대체분개하여 마감한다.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="25" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>40. (주)상공의 2017년 원가자료는 아래와 같다. (주)상공은 평균법으로 종합원가계산을 하고 있다. 원재료는 공정초에 모두 투입되고 가공비는 전공정에 걸쳐 균등하게 계산된다. 재료비와 가공비의 완성품 환산량 합계는 얼마인가?</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>    </CHAR>
+					<PICTURE Reverse="false">
+						<SHAPEOBJECT InstId="1291457240"/>
+						<EFFECTS/>
+					</PICTURE>
+					<CHAR/>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						① 6,000<TAB/><TAB/>② 7,400
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						③ 9,400<TAB/><TAB/>④ 10,000
+					</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12"/>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>전자문제집 CBT PC 버전 : </CHAR>
+					<FIELDBEGIN Command="https\://www.comcbt.com/;1;0;0;" Dirty="true" Editable="false" FieldId="627600491" InstId="1291457241" Property="0" Type="Hyperlink"/>
+				</TEXT>
+				<TEXT CharShape="17">
+					<CHAR>www.comcbt.com</CHAR>
+				</TEXT>
+				<TEXT CharShape="12">
+					<FIELDEND Editable="false" FieldId="627600491" Property="0" Type="Hyperlink"/>
+					<CHAR>
+						<LINEBREAK/>전자문제집 CBT 모바일 버전 :
+					</CHAR>
+					<FIELDBEGIN Command="https\://m.comcbt.com/;1;0;0;" Dirty="true" Editable="false" FieldId="627600491" InstId="1291457242" Property="0" Type="Hyperlink"/>
+				</TEXT>
+				<TEXT CharShape="17">
+					<CHAR>m.comcbt.com</CHAR>
+				</TEXT>
+				<TEXT CharShape="12">
+					<FIELDEND Editable="false" FieldId="627600491" Property="0" Type="Hyperlink"/>
+					<CHAR>
+						<LINEBREAK/>기출문제 및 해설집 다운로드  :
+					</CHAR>
+					<FIELDBEGIN Command="https\://www.comcbt.com/xe;1;0;0;" Dirty="true" Editable="false" FieldId="627600491" InstId="1291457243" Property="0" Type="Hyperlink"/>
+				</TEXT>
+				<TEXT CharShape="17">
+					<CHAR>www.comcbt.com/xe</CHAR>
+				</TEXT>
+				<TEXT CharShape="12">
+					<FIELDEND Editable="false" FieldId="627600491" Property="0" Type="Hyperlink"/>
+					<CHAR>
+						<LINEBREAK/><LINEBREAK/>전자문제집 CBT란?<LINEBREAK/>종이 문제집이 아닌 인터넷으로 문제를 풀고 자동으로 채점하며 모의고사, 오답 노트, 해설까지 제공하는 무료 기출문제 학습 프로그램으로 실제 시험에서 사용하는 OMR 형식의 CBT를 제공합니다.<LINEBREAK/>PC 버전 및 모바일 버전 완벽 연동<LINEBREAK/>교사용/학생용 관리기능도 제공합니다.<LINEBREAK/><LINEBREAK/>
+					</CHAR>
+				</TEXT>
+				<TEXT CharShape="18">
+					<CHAR>오답 및 오탈자가 수정된 최신 자료와 해설은 전자문제집 CBT 에서 확인하세요.</CHAR>
+				</TEXT>
+			</P>
+			<P ParaShape="19" Style="0">
+				<TEXT CharShape="12">
+					<CHAR>
+						<LINEBREAK/>
+					</CHAR>
+					<TABLE BorderFill="3" CellSpacing="0" ColCount="10" PageBreak="Cell" RepeatHeader="true" RowCount="8">
+						<SHAPEOBJECT InstId="1291457244"/>
+						<ROW>
+							<CELL BorderFill="5" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="0" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>1</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="0" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>2</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="0" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>3</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="0" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>4</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="4" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="0" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>5</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="5" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="0" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>6</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="6" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="0" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>7</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="7" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="0" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>8</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="8" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="0" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>9</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="9" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="0" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>10</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+						</ROW>
+						<ROW>
+							<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="1" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>③</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="1" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>④</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="1" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>③</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="1" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>①</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="4" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="1" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>③</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="5" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="1" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>②</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="6" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="1" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>①</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="7" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="1" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>③</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="8" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="1" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>③</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="9" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="1" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>③</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+						</ROW>
+						<ROW>
+							<CELL BorderFill="5" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="2" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>11</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="2" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>12</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="2" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>13</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="2" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>14</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="4" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="2" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>15</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="5" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="2" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>16</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="6" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="2" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>17</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="7" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="2" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>18</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="8" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="2" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>19</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="9" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="2" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>20</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+						</ROW>
+						<ROW>
+							<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="3" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>④</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="3" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>②</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="3" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>①</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="3" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>③</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="4" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="3" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>④</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="5" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="3" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>③</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="6" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="3" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>②</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="7" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="3" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>②</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="8" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="3" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>④</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="9" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="3" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>④</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+						</ROW>
+						<ROW>
+							<CELL BorderFill="5" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="4" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>21</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="4" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>22</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="4" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>23</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="4" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>24</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="4" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="4" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>25</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="5" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="4" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>26</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="6" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="4" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>27</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="7" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="4" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>28</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="8" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="4" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>29</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="9" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="4" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>30</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+						</ROW>
+						<ROW>
+							<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="5" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>②</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="5" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>②</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="5" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>②</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="5" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>①</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="4" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="5" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>③</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="5" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="5" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>①</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="6" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="5" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>①</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="7" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="5" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>②</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="8" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="5" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>②</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="9" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="5" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>④</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+						</ROW>
+						<ROW>
+							<CELL BorderFill="5" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="6" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>31</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="6" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>32</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="6" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>33</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="6" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>34</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="4" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="6" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>35</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="5" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="6" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>36</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="6" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="6" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>37</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="7" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="6" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>38</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="8" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="6" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>39</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="5" ColAddr="9" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="6" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>40</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+						</ROW>
+						<ROW>
+							<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="7" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>④</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="7" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>③</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="7" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>③</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="7" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>③</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="4" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="7" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>①</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="5" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="7" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>①</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="6" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="7" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>④</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="7" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="7" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>③</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="8" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="7" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>④</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+							<CELL BorderFill="3" ColAddr="9" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1282" Protect="false" RowAddr="7" RowSpan="1" Width="2125">
+								<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+								<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+									<P ParaShape="18" Style="0">
+										<TEXT CharShape="10">
+											<CHAR>③</CHAR>
+										</TEXT>
+									</P>
+								</PARALIST>
+							</CELL>
+						</ROW>
+					</TABLE>
+					<CHAR/>
+				</TEXT>
+			</P>
+		</SECTION>
+	</BODY>
+</HWPML>

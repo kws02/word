@@ -1,0 +1,270 @@
+﻿<div id="bg" class="game">
+    <div class="human">
+        <img id="human" src="@Url.Content("~/Content/Image/emergency.gif")" />
+    </div>
+    <div class="body"></div>
+</div>
+<div id="block"></div>
+<div class="bottom">
+    <input type="button" value="처음으로" class="button" onclick="location.href='/Home/Main'" />
+</div>
+<script>
+    var lefts = ["10%", "30%", "50%", "70%"];
+    var timeouts = Array(20);
+    var bottomC = 11;
+    var oceanTop = 497;
+    var objCount = 0;
+
+    $(document).ready(function ()
+    {
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            data: {
+                "Type": "Json",
+            },
+            async: false,
+            url: "/Home/Test",
+            success: function (data)
+            {
+                var script = "";
+                var table = "";
+                var rnds = [];
+                var time = 2000;
+
+                for (var i = 0; i < data.length; i++)
+                {
+                    script += "timeouts[" + i + "] = setTimeout(function ()";
+                    script += "{";
+                    script += " createObject(" + i + ", '" + data[i].단어 + "','" + data[i].뜻 + "'," + data[i].순번 + ");";
+                    script += "}, " + time + ");";
+
+                    time += 4000;
+                }
+
+                eval(script);
+
+                table += "<table class='wordTable' border='0' cellpadding='0' cellspacing='0' width='100%'>";
+                table += "<tr>";
+
+                for (var i = 0; i < data.length; i++)
+                {
+                    if (i > 0 && (i % 4) == 0)
+                        table += "</tr><tr>";
+
+                    while (true)
+                    {
+                        var rnd = parseInt(Math.random() * data.length);
+                        if (rnds.indexOf(rnd) == -1)
+                        {
+                            table += "<td id='td" + i + "' width='25%' align='left' onclick=\"clickTable(" + i + ")\">";
+                            table += "  <div>" + data[rnd].단어 + "</div>";
+                            table += "  <input type='hidden' value='" + data[rnd].뜻 + "'/>";
+                            table += "</td>";
+
+                            rnds.push(rnd);
+                            break;
+                        }
+
+                    }
+                }
+
+                table += "</tr>";
+                table += "</table>";
+
+                $("#block").append(table);
+            }
+        });
+    });
+
+    function createObject(n, word, mean, seq)
+    {
+        if (!document.getElementById("obj" + n))
+        {
+            var rnd = parseInt(Math.random() * 4);
+            var left = lefts[rnd];
+            var div = "";
+
+            div += "<div id = 'obj" + n + "' style='left:" + left + ";' onclick =\"clickObject('" + n + "')\">";
+            div += "    <div>" + mean + "</div>";
+            div += "    <input name='word' type='hidden' value='" + word + "'/>";
+            div += "    <input name='seq' type='hidden' value='" + seq + "'/>";
+            div += "</div>";
+
+            $("#bg").append(div);
+            objCount++;
+        }
+        else
+        {
+            var top = parseInt($("#obj" + n).css("top").replace(/px/gi, ""));
+            top = top + 30;
+
+            if ((top + 30) >= oceanTop)
+            {
+                wrongOK(seq);
+
+                clearTimeout(timeouts[n]);
+                $("#obj" + n).remove();
+
+                oceanTop = 497 - bottomC;
+                $("#bg").append("<div class='ocean' style='top:" + oceanTop + "px'></div>");
+                bottomC += 11;
+
+                if ($(".ocean").length >= 6)
+                {
+                    for (var i = 0; i < timeouts.length; i++)
+                    {
+                        clearTimeout(timeouts[i]);
+                        $("#obj" + i).remove();
+                    }
+
+                    $("#human").attr("src", "/content/image/dead.gif");
+                }
+                else
+                {
+                    if ($("div[id^='obj']").length == 0 && objCount == 20)
+                        $("#human").attr("src", "/content/image/victory.gif");
+                }
+
+                return;
+            }
+
+            $("#obj" + n).css("top", top + "px");
+        }
+
+        timeouts[n] = setTimeout("createObject(" + n + ",'" + word + "','" + mean + "'," + seq + ")", 4000);
+    }
+
+    function clickTable(n)
+    {
+        $("td[id^='td']").css("background", "#FFFFFF");
+        $("#td" + n).css("background", "#CCCCCC");
+
+        $("td[id^='td']").removeAttr("choose");
+        $("#td" + n).attr("choose", "choose");
+
+        var obj = document.querySelector("div[choose='choose']");
+        
+        if (obj)
+        {
+            var td_단어 = $("#td" + n).find("div").text();
+            var td_뜻 = $("#td" + n).find("input[type='hidden']").val();
+            var obj_단어 = $(obj).find("input:hidden[name='word']").val();
+            var obj_뜻 = $(obj).find("div").text();
+            
+            if (obj_단어 == td_단어 && obj_뜻 == td_뜻)
+            {
+                var s = parseInt($(obj).prop("id").replace(/obj/gi, ""));
+                SaveTest(obj);
+
+                clearTimeout(timeouts[s]);
+                $(obj).remove();
+                $("#td" + n).css("background", "#FFFFFF");
+                $("#td" + n).removeAttr("choose");
+                $("#td" + n).find("div").html("&nbsp;");
+
+                if ($("div[id^='obj']").length == 0 && objCount == 20)
+                    $("#human").attr("src", "/content/image/victory.gif");
+            }
+            else
+            {
+                $(obj).removeAttr("choose");
+                $(obj).css("background", "#FFFFFF");
+                $("#td" + n).removeAttr("choose");
+                $("#td" + n).css("background", "#FFFFFF");
+            }
+        }
+    }
+
+    function clickObject(n)
+    {
+        $("div[id^='obj']").css("background", "#FFFFFF");
+        $("#obj" + n).css("background", "#CCCCCC");
+
+        $("div[id^='obj']").removeAttr("choose");
+        $("#obj" + n).attr("choose", "choose");
+
+        var td = document.querySelector("td[choose='choose']");
+        
+        if (td)
+        {
+            var obj_단어 = $("#obj" + n + " > input:hidden[name='word']").val();
+            var obj_뜻 = $("#obj" + n + " > div").text();
+            var td_단어 = $(td).find("div").text();
+            var td_뜻 = $(td).find("input[type='hidden']").val();
+            
+            if (obj_단어 == td_단어 && obj_뜻 == td_뜻)
+            {
+                SaveTest($("#obj" + n));
+
+                clearTimeout(timeouts[n]);
+                $("#obj" + n).remove();
+                $(td).css("background", "#FFFFFF");
+                $(td).removeAttr("choose");
+                $(td).find("div").html("&nbsp;");
+
+                if ($("div[id^='obj']").length == 0 && objCount == 20)
+                    $("#human").attr("src", "/content/image/victory.gif");
+            }
+            else
+            {
+                $("#obj" + n).removeAttr("choose");
+                $("#obj" + n).css("background", "#FFFFFF");
+                $(td).removeAttr("choose");
+                $(td).css("background", "#FFFFFF");
+            }
+        }
+    }
+
+    function SaveTest(obj)
+    {
+        var seq = $(obj).find("input:hidden[name='seq']").val();
+
+        $.ajax({
+            type: "GET",
+            dataType: "text",
+            data: {
+                "Seq": seq,
+            },
+            async: false,
+            url: "/Home/TestCountUpdate",
+            success: function (data)
+            {
+                
+            }
+        });     
+    }
+
+    function wrongOK(seq)
+    {
+        $.ajax({
+            type: "GET",
+            dataType: "text",
+            data: {
+                "Seq": seq,
+                "Flag": "N"
+            },
+            async: false,
+            url: "/Home/ReviewOK",
+            success: function (data)
+            {
+                if (data == "OK")
+                {
+                    $.ajax({
+                        type: "GET",
+                        dataType: "text",
+                        data: {
+                            "Seq": seq
+                        },
+                        async: false,
+                        url: "/Home/WrongCountUpdate",
+                        success: function (data)
+                        {
+                            
+                        }
+                    });
+                }
+            }
+        });
+    }
+</script>

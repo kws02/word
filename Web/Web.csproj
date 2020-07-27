@@ -1,0 +1,831 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.ML.Recommender.0.16.0\build\netstandard2.0\Microsoft.ML.Recommender.props" Condition="Exists('..\packages\Microsoft.ML.Recommender.0.16.0\build\netstandard2.0\Microsoft.ML.Recommender.props')" />
+  <Import Project="..\packages\Microsoft.ML.Mkl.Components.1.4.0\build\netstandard2.0\Microsoft.ML.Mkl.Components.props" Condition="Exists('..\packages\Microsoft.ML.Mkl.Components.1.4.0\build\netstandard2.0\Microsoft.ML.Mkl.Components.props')" />
+  <Import Project="..\packages\Microsoft.ML.Mkl.Redist.1.4.0\build\netstandard2.0\Microsoft.ML.Mkl.Redist.props" Condition="Exists('..\packages\Microsoft.ML.Mkl.Redist.1.4.0\build\netstandard2.0\Microsoft.ML.Mkl.Redist.props')" />
+  <Import Project="..\packages\LightGBM.2.2.3\build\LightGBM.props" Condition="Exists('..\packages\LightGBM.2.2.3\build\LightGBM.props')" />
+  <Import Project="..\packages\Microsoft.ML.FastTree.1.4.0\build\netstandard2.0\Microsoft.ML.FastTree.props" Condition="Exists('..\packages\Microsoft.ML.FastTree.1.4.0\build\netstandard2.0\Microsoft.ML.FastTree.props')" />
+  <Import Project="..\packages\Microsoft.ML.1.4.0\build\netstandard2.0\Microsoft.ML.props" Condition="Exists('..\packages\Microsoft.ML.1.4.0\build\netstandard2.0\Microsoft.ML.props')" />
+  <Import Project="..\packages\Microsoft.ML.CpuMath.1.4.0\build\netstandard2.0\Microsoft.ML.CpuMath.props" Condition="Exists('..\packages\Microsoft.ML.CpuMath.1.4.0\build\netstandard2.0\Microsoft.ML.CpuMath.props')" />
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C072BEA1-16EE-4065-AB1B-43643523411B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Web</RootNamespace>
+    <AssemblyName>Web</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44334</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.10.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.10.0\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ML.AutoML, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ML.AutoML.0.16.0\lib\netstandard2.0\Microsoft.ML.AutoML.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ML.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ML.1.4.0\lib\netstandard2.0\Microsoft.ML.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ML.CpuMath, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ML.CpuMath.1.4.0\lib\netstandard2.0\Microsoft.ML.CpuMath.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ML.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ML.1.4.0\lib\netstandard2.0\Microsoft.ML.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ML.DataView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ML.DataView.1.4.0\lib\netstandard2.0\Microsoft.ML.DataView.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ML.FastTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ML.FastTree.1.4.0\lib\netstandard2.0\Microsoft.ML.FastTree.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ML.ImageAnalytics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ML.ImageAnalytics.1.4.0\lib\netstandard2.0\Microsoft.ML.ImageAnalytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ML.KMeansClustering, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ML.1.4.0\lib\netstandard2.0\Microsoft.ML.KMeansClustering.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ML.LightGbm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ML.LightGbm.1.4.0\lib\netstandard2.0\Microsoft.ML.LightGbm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ML.Mkl.Components, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ML.Mkl.Components.1.4.0\lib\netstandard2.0\Microsoft.ML.Mkl.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ML.PCA, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ML.1.4.0\lib\netstandard2.0\Microsoft.ML.PCA.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ML.Recommender, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ML.Recommender.0.16.0\lib\netstandard2.0\Microsoft.ML.Recommender.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ML.StandardTrainers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ML.1.4.0\lib\netstandard2.0\Microsoft.ML.StandardTrainers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ML.TensorFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ML.TensorFlow.1.4.0\lib\netstandard2.0\Microsoft.ML.TensorFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ML.Transforms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ML.1.4.0\lib\netstandard2.0\Microsoft.ML.Transforms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ML.Vision, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ML.Vision.1.4.0\lib\netstandard2.0\Microsoft.ML.Vision.dll</HintPath>
+    </Reference>
+    <Reference Include="NumSharp.Core, Version=0.20.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\NumSharp.0.20.4\lib\netstandard2.0\NumSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.CodeDom, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.CodeDom.4.4.0\lib\net461\System.CodeDom.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.5.0\lib\netstandard2.0\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.4.5.0\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.AccessControl, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.AccessControl.4.5.0\lib\net461\System.IO.FileSystem.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.AccessControl, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.4.5.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.4.5.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Dataflow, Version=4.6.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Dataflow.4.8.0\lib\netstandard2.0\System.Threading.Tasks.Dataflow.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="TensorFlow.NET, Version=0.11.8.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\TensorFlow.NET.0.11.8.1\lib\netstandard2.0\TensorFlow.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Attribute\NoCacheAttribute.cs" />
+    <Compile Include="Attribute\SessionAttribute.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\계정.cs" />
+    <Compile Include="Models\로그.cs" />
+    <Compile Include="Models\복습.cs" />
+    <Compile Include="Models\DataContext.cs" />
+    <Compile Include="Models\썸네일.cs" />
+    <Compile Include="Models\자주틀리는단어.cs" />
+    <Compile Include="Models\전산회계운용사.cs" />
+    <Compile Include="Models\전산회계운용사_답안.cs" />
+    <Compile Include="Models\전산회계운용사_문제.cs" />
+    <Compile Include="Models\전산회계운용사_선택.cs" />
+    <Compile Include="Models\전산회계운용사_이미지.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\Extension.cs" />
+    <Compile Include="Util\SplitHangulJaMo.cs" />
+    <Compile Include="Util\Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Image\20151\PIC1291470485.gif" />
+    <Content Include="Content\Image\20151\PIC1291470486.gif" />
+    <Content Include="Content\Image\20151\PIC1291470487.gif" />
+    <Content Include="Content\Image\20151\PIC1291470488.gif" />
+    <Content Include="Content\Image\20151\PIC1291470489.gif" />
+    <Content Include="Content\Image\20151\PIC1291470490.gif" />
+    <Content Include="Content\Image\20151\PIC1291470491.gif" />
+    <Content Include="Content\Image\20151\PIC1291470493.gif" />
+    <Content Include="Content\Image\20151\PIC1291470494.gif" />
+    <Content Include="Content\Image\20151\PIC1291470495.gif" />
+    <Content Include="Content\Image\20151\PIC1291470496.gif" />
+    <Content Include="Content\Image\20151\PIC1291470497.gif" />
+    <Content Include="Content\Image\20151\PIC1291470498.gif" />
+    <Content Include="Content\Image\20151\PIC1291470499.gif" />
+    <Content Include="Content\Image\20151\PIC1291470500.gif" />
+    <Content Include="Content\Image\20151\PIC1291470501.gif" />
+    <Content Include="Content\Image\20151\PIC1291470502.gif" />
+    <Content Include="Content\Image\20151\PIC1291470503.gif" />
+    <Content Include="Content\Image\20151\PIC1291470504.gif" />
+    <Content Include="Content\Image\20151\PIC1291470505.gif" />
+    <Content Include="Content\Image\20151\PIC1291470506.gif" />
+    <Content Include="Content\Image\20151\PIC1291470507.gif" />
+    <Content Include="Content\Image\20151\PIC1291470508.gif" />
+    <Content Include="Content\Image\20151\PIC1291470509.gif" />
+    <Content Include="Content\Image\20151\PIC1291470510.gif" />
+    <Content Include="Content\Image\20151\전산회계운용사2급20150228%28학생용%29.xml" />
+    <Content Include="Content\Image\20151\전산회계운용사2급20150228%28학생용%29.xsl" />
+    <Content Include="Content\Image\20152\PIC1291468809.gif" />
+    <Content Include="Content\Image\20152\PIC1291468810.gif" />
+    <Content Include="Content\Image\20152\PIC1291468811.gif" />
+    <Content Include="Content\Image\20152\PIC1291468812.gif" />
+    <Content Include="Content\Image\20152\PIC1291468813.gif" />
+    <Content Include="Content\Image\20152\PIC1291468814.gif" />
+    <Content Include="Content\Image\20152\PIC1291468815.gif" />
+    <Content Include="Content\Image\20152\PIC1291468816.gif" />
+    <Content Include="Content\Image\20152\PIC1291468817.gif" />
+    <Content Include="Content\Image\20152\PIC1291468818.gif" />
+    <Content Include="Content\Image\20152\PIC1291468819.gif" />
+    <Content Include="Content\Image\20152\PIC1291468820.gif" />
+    <Content Include="Content\Image\20152\PIC1291468822.gif" />
+    <Content Include="Content\Image\20152\PIC1291468823.gif" />
+    <Content Include="Content\Image\20152\PIC1291468824.gif" />
+    <Content Include="Content\Image\20152\PIC1291468825.gif" />
+    <Content Include="Content\Image\20152\PIC1291468826.gif" />
+    <Content Include="Content\Image\20152\PIC1291468827.gif" />
+    <Content Include="Content\Image\20152\PIC1291468828.gif" />
+    <Content Include="Content\Image\20152\PIC1291468829.gif" />
+    <Content Include="Content\Image\20152\PIC1291468830.gif" />
+    <Content Include="Content\Image\20152\PIC1291468831.gif" />
+    <Content Include="Content\Image\20152\PIC1291468832.gif" />
+    <Content Include="Content\Image\20152\PIC1291468833.gif" />
+    <Content Include="Content\Image\20152\PIC1291468834.gif" />
+    <Content Include="Content\Image\20152\PIC1291468835.gif" />
+    <Content Include="Content\Image\20152\PIC1291468836.gif" />
+    <Content Include="Content\Image\20152\PIC1291468837.gif" />
+    <Content Include="Content\Image\20152\전산회계운용사2급20150516%28학생용%29.xml" />
+    <Content Include="Content\Image\20152\전산회계운용사2급20150516%28학생용%29.xsl" />
+    <Content Include="Content\Image\20153\PIC1291465070.gif" />
+    <Content Include="Content\Image\20153\PIC1291465071.gif" />
+    <Content Include="Content\Image\20153\PIC1291465072.gif" />
+    <Content Include="Content\Image\20153\PIC1291465073.gif" />
+    <Content Include="Content\Image\20153\PIC1291465074.gif" />
+    <Content Include="Content\Image\20153\PIC1291465075.gif" />
+    <Content Include="Content\Image\20153\PIC1291465076.gif" />
+    <Content Include="Content\Image\20153\PIC1291465077.gif" />
+    <Content Include="Content\Image\20153\PIC1291465078.gif" />
+    <Content Include="Content\Image\20153\PIC1291465079.gif" />
+    <Content Include="Content\Image\20153\PIC1291465080.gif" />
+    <Content Include="Content\Image\20153\PIC1291465081.gif" />
+    <Content Include="Content\Image\20153\PIC1291465083.gif" />
+    <Content Include="Content\Image\20153\PIC1291465084.gif" />
+    <Content Include="Content\Image\20153\PIC1291465085.gif" />
+    <Content Include="Content\Image\20153\PIC1291465086.gif" />
+    <Content Include="Content\Image\20153\PIC1291465087.gif" />
+    <Content Include="Content\Image\20153\PIC1291465088.gif" />
+    <Content Include="Content\Image\20153\PIC1291465089.gif" />
+    <Content Include="Content\Image\20153\PIC1291465090.gif" />
+    <Content Include="Content\Image\20153\PIC1291465091.gif" />
+    <Content Include="Content\Image\20153\PIC1291465092.gif" />
+    <Content Include="Content\Image\20153\PIC1291465093.gif" />
+    <Content Include="Content\Image\20153\PIC1291465094.gif" />
+    <Content Include="Content\Image\20153\PIC1291465095.gif" />
+    <Content Include="Content\Image\20153\전산회계운용사2급20151003%28학생용%29.xml" />
+    <Content Include="Content\Image\20153\전산회계운용사2급20151003%28학생용%29.xsl" />
+    <Content Include="Content\Image\20161\PIC1291463911.gif" />
+    <Content Include="Content\Image\20161\PIC1291463912.gif" />
+    <Content Include="Content\Image\20161\PIC1291463913.gif" />
+    <Content Include="Content\Image\20161\PIC1291463914.gif" />
+    <Content Include="Content\Image\20161\PIC1291463915.gif" />
+    <Content Include="Content\Image\20161\PIC1291463916.gif" />
+    <Content Include="Content\Image\20161\PIC1291463917.gif" />
+    <Content Include="Content\Image\20161\PIC1291463919.gif" />
+    <Content Include="Content\Image\20161\PIC1291463920.gif" />
+    <Content Include="Content\Image\20161\PIC1291463921.gif" />
+    <Content Include="Content\Image\20161\PIC1291463922.gif" />
+    <Content Include="Content\Image\20161\PIC1291463923.gif" />
+    <Content Include="Content\Image\20161\PIC1291463924.gif" />
+    <Content Include="Content\Image\20161\PIC1291463925.gif" />
+    <Content Include="Content\Image\20161\PIC1291463926.gif" />
+    <Content Include="Content\Image\20161\전산회계운용사2급20160220%28학생용%29.xml" />
+    <Content Include="Content\Image\20161\전산회계운용사2급20160220%28학생용%29.xsl" />
+    <Content Include="Content\Image\20162\PIC1291462555.gif" />
+    <Content Include="Content\Image\20162\PIC1291462556.gif" />
+    <Content Include="Content\Image\20162\PIC1291462557.gif" />
+    <Content Include="Content\Image\20162\PIC1291462558.gif" />
+    <Content Include="Content\Image\20162\PIC1291462559.gif" />
+    <Content Include="Content\Image\20162\PIC1291462560.gif" />
+    <Content Include="Content\Image\20162\PIC1291462561.gif" />
+    <Content Include="Content\Image\20162\PIC1291462562.gif" />
+    <Content Include="Content\Image\20162\PIC1291462564.gif" />
+    <Content Include="Content\Image\20162\PIC1291462565.gif" />
+    <Content Include="Content\Image\20162\PIC1291462566.gif" />
+    <Content Include="Content\Image\20162\PIC1291462567.gif" />
+    <Content Include="Content\Image\20162\PIC1291462568.gif" />
+    <Content Include="Content\Image\20162\PIC1291462569.gif" />
+    <Content Include="Content\Image\20162\PIC1291462570.gif" />
+    <Content Include="Content\Image\20162\PIC1291462571.gif" />
+    <Content Include="Content\Image\20162\PIC1291462572.gif" />
+    <Content Include="Content\Image\20162\PIC1291462573.gif" />
+    <Content Include="Content\Image\20162\PIC1291462574.gif" />
+    <Content Include="Content\Image\20162\PIC1291462575.gif" />
+    <Content Include="Content\Image\20162\PIC1291462576.gif" />
+    <Content Include="Content\Image\20162\전산회계운용사2급20160521%28학생용%29.xml" />
+    <Content Include="Content\Image\20162\전산회계운용사2급20160521%28학생용%29.xsl" />
+    <Content Include="Content\Image\20163\PIC1291460738.gif" />
+    <Content Include="Content\Image\20163\PIC1291460739.gif" />
+    <Content Include="Content\Image\20163\PIC1291460740.gif" />
+    <Content Include="Content\Image\20163\PIC1291460741.gif" />
+    <Content Include="Content\Image\20163\PIC1291460742.gif" />
+    <Content Include="Content\Image\20163\PIC1291460743.gif" />
+    <Content Include="Content\Image\20163\PIC1291460744.gif" />
+    <Content Include="Content\Image\20163\PIC1291460745.gif" />
+    <Content Include="Content\Image\20163\PIC1291460746.gif" />
+    <Content Include="Content\Image\20163\PIC1291460747.gif" />
+    <Content Include="Content\Image\20163\PIC1291460748.gif" />
+    <Content Include="Content\Image\20163\PIC1291460749.gif" />
+    <Content Include="Content\Image\20163\PIC1291460750.gif" />
+    <Content Include="Content\Image\20163\PIC1291460752.gif" />
+    <Content Include="Content\Image\20163\PIC1291460753.gif" />
+    <Content Include="Content\Image\20163\PIC1291460754.gif" />
+    <Content Include="Content\Image\20163\PIC1291460755.gif" />
+    <Content Include="Content\Image\20163\PIC1291460756.gif" />
+    <Content Include="Content\Image\20163\PIC1291460757.gif" />
+    <Content Include="Content\Image\20163\PIC1291460758.gif" />
+    <Content Include="Content\Image\20163\PIC1291460759.gif" />
+    <Content Include="Content\Image\20163\PIC1291460760.gif" />
+    <Content Include="Content\Image\20163\PIC1291460761.gif" />
+    <Content Include="Content\Image\20163\PIC1291460762.gif" />
+    <Content Include="Content\Image\20163\PIC1291460763.gif" />
+    <Content Include="Content\Image\20163\PIC1291460764.gif" />
+    <Content Include="Content\Image\20163\전산회계운용사2급20161008%28학생용%29.xml" />
+    <Content Include="Content\Image\20163\전산회계운용사2급20161008%28학생용%29.xsl" />
+    <Content Include="Content\Image\20171\PIC1291459568.gif" />
+    <Content Include="Content\Image\20171\PIC1291459569.gif" />
+    <Content Include="Content\Image\20171\PIC1291459570.gif" />
+    <Content Include="Content\Image\20171\PIC1291459571.gif" />
+    <Content Include="Content\Image\20171\PIC1291459572.gif" />
+    <Content Include="Content\Image\20171\PIC1291459573.gif" />
+    <Content Include="Content\Image\20171\PIC1291459574.gif" />
+    <Content Include="Content\Image\20171\PIC1291459575.gif" />
+    <Content Include="Content\Image\20171\PIC1291459576.gif" />
+    <Content Include="Content\Image\20171\PIC1291459577.gif" />
+    <Content Include="Content\Image\20171\PIC1291459578.gif" />
+    <Content Include="Content\Image\20171\PIC1291459579.gif" />
+    <Content Include="Content\Image\20171\PIC1291459580.gif" />
+    <Content Include="Content\Image\20171\PIC1291459581.gif" />
+    <Content Include="Content\Image\20171\PIC1291459582.gif" />
+    <Content Include="Content\Image\20171\PIC1291459583.gif" />
+    <Content Include="Content\Image\20171\PIC1291459584.gif" />
+    <Content Include="Content\Image\20171\PIC1291459586.gif" />
+    <Content Include="Content\Image\20171\PIC1291459587.gif" />
+    <Content Include="Content\Image\20171\PIC1291459588.gif" />
+    <Content Include="Content\Image\20171\PIC1291459589.gif" />
+    <Content Include="Content\Image\20171\PIC1291459590.gif" />
+    <Content Include="Content\Image\20171\PIC1291459591.gif" />
+    <Content Include="Content\Image\20171\PIC1291459592.gif" />
+    <Content Include="Content\Image\20171\PIC1291459593.gif" />
+    <Content Include="Content\Image\20171\PIC1291459594.gif" />
+    <Content Include="Content\Image\20171\PIC1291459595.gif" />
+    <Content Include="Content\Image\20171\전산회계운용사2급20170218%28학생용%29.xml" />
+    <Content Include="Content\Image\20171\전산회계운용사2급20170218%28학생용%29.xsl" />
+    <Content Include="Content\Image\20172\PIC1291457223.gif" />
+    <Content Include="Content\Image\20172\PIC1291457224.gif" />
+    <Content Include="Content\Image\20172\PIC1291457225.gif" />
+    <Content Include="Content\Image\20172\PIC1291457226.gif" />
+    <Content Include="Content\Image\20172\PIC1291457227.gif" />
+    <Content Include="Content\Image\20172\PIC1291457228.gif" />
+    <Content Include="Content\Image\20172\PIC1291457229.gif" />
+    <Content Include="Content\Image\20172\PIC1291457231.gif" />
+    <Content Include="Content\Image\20172\PIC1291457232.gif" />
+    <Content Include="Content\Image\20172\PIC1291457233.gif" />
+    <Content Include="Content\Image\20172\PIC1291457234.gif" />
+    <Content Include="Content\Image\20172\PIC1291457235.gif" />
+    <Content Include="Content\Image\20172\PIC1291457236.gif" />
+    <Content Include="Content\Image\20172\PIC1291457237.gif" />
+    <Content Include="Content\Image\20172\PIC1291457238.gif" />
+    <Content Include="Content\Image\20172\PIC1291457239.gif" />
+    <Content Include="Content\Image\20172\PIC1291457240.gif" />
+    <Content Include="Content\Image\20172\전산회계운용사2급20170527%28학생용%29.xml" />
+    <Content Include="Content\Image\20172\전산회계운용사2급20170527%28학생용%29.xsl" />
+    <Content Include="Content\Image\20173\PIC1291455722.gif" />
+    <Content Include="Content\Image\20173\PIC1291455723.gif" />
+    <Content Include="Content\Image\20173\PIC1291455724.gif" />
+    <Content Include="Content\Image\20173\PIC1291455725.gif" />
+    <Content Include="Content\Image\20173\PIC1291455726.gif" />
+    <Content Include="Content\Image\20173\PIC1291455727.gif" />
+    <Content Include="Content\Image\20173\PIC1291455728.gif" />
+    <Content Include="Content\Image\20173\PIC1291455729.gif" />
+    <Content Include="Content\Image\20173\PIC1291455730.gif" />
+    <Content Include="Content\Image\20173\PIC1291455731.gif" />
+    <Content Include="Content\Image\20173\PIC1291455732.gif" />
+    <Content Include="Content\Image\20173\PIC1291455733.gif" />
+    <Content Include="Content\Image\20173\PIC1291455734.gif" />
+    <Content Include="Content\Image\20173\PIC1291455735.gif" />
+    <Content Include="Content\Image\20173\PIC1291455736.gif" />
+    <Content Include="Content\Image\20173\PIC1291455737.gif" />
+    <Content Include="Content\Image\20173\PIC1291455738.gif" />
+    <Content Include="Content\Image\20173\PIC1291455739.gif" />
+    <Content Include="Content\Image\20173\PIC1291455740.gif" />
+    <Content Include="Content\Image\20173\PIC1291455741.gif" />
+    <Content Include="Content\Image\20173\PIC1291455743.gif" />
+    <Content Include="Content\Image\20173\PIC1291455744.gif" />
+    <Content Include="Content\Image\20173\PIC1291455745.gif" />
+    <Content Include="Content\Image\20173\PIC1291455746.gif" />
+    <Content Include="Content\Image\20173\PIC1291455747.gif" />
+    <Content Include="Content\Image\20173\PIC1291455748.gif" />
+    <Content Include="Content\Image\20173\PIC1291455749.gif" />
+    <Content Include="Content\Image\20173\PIC1291455750.gif" />
+    <Content Include="Content\Image\20173\PIC1291455751.gif" />
+    <Content Include="Content\Image\20173\PIC1291455752.gif" />
+    <Content Include="Content\Image\20173\PIC1291455753.gif" />
+    <Content Include="Content\Image\20173\PIC1291455754.gif" />
+    <Content Include="Content\Image\20173\PIC1291455755.gif" />
+    <Content Include="Content\Image\20173\전산회계운용사2급20170916%28학생용%29.xml" />
+    <Content Include="Content\Image\20173\전산회계운용사2급20170916%28학생용%29.xsl" />
+    <Content Include="Content\Image\20181\PIC1299374452.gif" />
+    <Content Include="Content\Image\20181\PIC1299374453.gif" />
+    <Content Include="Content\Image\20181\PIC1299374454.gif" />
+    <Content Include="Content\Image\20181\PIC1299374455.gif" />
+    <Content Include="Content\Image\20181\PIC1299374456.gif" />
+    <Content Include="Content\Image\20181\PIC1299374457.gif" />
+    <Content Include="Content\Image\20181\PIC1299374458.gif" />
+    <Content Include="Content\Image\20181\PIC1299374459.gif" />
+    <Content Include="Content\Image\20181\PIC1299374460.gif" />
+    <Content Include="Content\Image\20181\PIC1299374461.gif" />
+    <Content Include="Content\Image\20181\PIC1299374462.gif" />
+    <Content Include="Content\Image\20181\PIC1299374463.gif" />
+    <Content Include="Content\Image\20181\PIC1299374464.gif" />
+    <Content Include="Content\Image\20181\PIC1299374465.gif" />
+    <Content Include="Content\Image\20181\PIC1299374466.gif" />
+    <Content Include="Content\Image\20181\PIC1299374467.gif" />
+    <Content Include="Content\Image\20181\PIC1299374468.gif" />
+    <Content Include="Content\Image\20181\PIC1299374470.gif" />
+    <Content Include="Content\Image\20181\PIC1299374471.gif" />
+    <Content Include="Content\Image\20181\PIC1299374472.gif" />
+    <Content Include="Content\Image\20181\PIC1299374473.gif" />
+    <Content Include="Content\Image\20181\PIC1299374474.gif" />
+    <Content Include="Content\Image\20181\PIC1299374475.gif" />
+    <Content Include="Content\Image\20181\PIC1299374476.gif" />
+    <Content Include="Content\Image\20181\PIC1299374477.gif" />
+    <Content Include="Content\Image\20181\PIC1299374478.gif" />
+    <Content Include="Content\Image\20181\PIC1299374479.gif" />
+    <Content Include="Content\Image\20181\PIC1299374480.gif" />
+    <Content Include="Content\Image\20181\PIC1299374481.gif" />
+    <Content Include="Content\Image\20181\PIC1299374482.gif" />
+    <Content Include="Content\Image\20181\전산회계운용사2급20180210%28학생용%29.xml" />
+    <Content Include="Content\Image\20181\전산회계운용사2급20180210%28학생용%29.xsl" />
+    <Content Include="Content\Image\20182\PIC1291452578.gif" />
+    <Content Include="Content\Image\20182\PIC1291452579.gif" />
+    <Content Include="Content\Image\20182\PIC1291452580.gif" />
+    <Content Include="Content\Image\20182\PIC1291452581.gif" />
+    <Content Include="Content\Image\20182\PIC1291452582.gif" />
+    <Content Include="Content\Image\20182\PIC1291452583.gif" />
+    <Content Include="Content\Image\20182\PIC1291452584.gif" />
+    <Content Include="Content\Image\20182\PIC1291452585.gif" />
+    <Content Include="Content\Image\20182\PIC1291452586.gif" />
+    <Content Include="Content\Image\20182\PIC1291452587.gif" />
+    <Content Include="Content\Image\20182\PIC1291452588.gif" />
+    <Content Include="Content\Image\20182\PIC1291452589.gif" />
+    <Content Include="Content\Image\20182\PIC1291452590.gif" />
+    <Content Include="Content\Image\20182\PIC1291452591.gif" />
+    <Content Include="Content\Image\20182\PIC1291452592.gif" />
+    <Content Include="Content\Image\20182\PIC1291452593.gif" />
+    <Content Include="Content\Image\20182\PIC1291452594.gif" />
+    <Content Include="Content\Image\20182\PIC1291452595.gif" />
+    <Content Include="Content\Image\20182\PIC1291452596.gif" />
+    <Content Include="Content\Image\20182\PIC1291452597.gif" />
+    <Content Include="Content\Image\20182\PIC1291452598.gif" />
+    <Content Include="Content\Image\20182\PIC1291452599.gif" />
+    <Content Include="Content\Image\20182\PIC1291452600.gif" />
+    <Content Include="Content\Image\20182\PIC1291452602.gif" />
+    <Content Include="Content\Image\20182\PIC1291452603.gif" />
+    <Content Include="Content\Image\20182\PIC1291452604.gif" />
+    <Content Include="Content\Image\20182\PIC1291452605.gif" />
+    <Content Include="Content\Image\20182\PIC1291452606.gif" />
+    <Content Include="Content\Image\20182\PIC1291452607.gif" />
+    <Content Include="Content\Image\20182\PIC1291452608.gif" />
+    <Content Include="Content\Image\20182\PIC1291452609.gif" />
+    <Content Include="Content\Image\20182\PIC1291452610.gif" />
+    <Content Include="Content\Image\20182\PIC1291452611.gif" />
+    <Content Include="Content\Image\20182\PIC1291452612.gif" />
+    <Content Include="Content\Image\20182\PIC1291452613.gif" />
+    <Content Include="Content\Image\20182\전산회계운용사2급20180519%28학생용%29.xml" />
+    <Content Include="Content\Image\20182\전산회계운용사2급20180519%28학생용%29.xsl" />
+    <Content Include="Content\Image\20183\PIC1291451497.gif" />
+    <Content Include="Content\Image\20183\PIC1291451498.gif" />
+    <Content Include="Content\Image\20183\PIC1291451499.gif" />
+    <Content Include="Content\Image\20183\PIC1291451500.gif" />
+    <Content Include="Content\Image\20183\PIC1291451501.gif" />
+    <Content Include="Content\Image\20183\PIC1291451502.gif" />
+    <Content Include="Content\Image\20183\PIC1291451503.gif" />
+    <Content Include="Content\Image\20183\PIC1291451504.gif" />
+    <Content Include="Content\Image\20183\PIC1291451505.gif" />
+    <Content Include="Content\Image\20183\PIC1291451506.gif" />
+    <Content Include="Content\Image\20183\PIC1291451507.gif" />
+    <Content Include="Content\Image\20183\PIC1291451508.gif" />
+    <Content Include="Content\Image\20183\PIC1291451509.gif" />
+    <Content Include="Content\Image\20183\PIC1291451510.gif" />
+    <Content Include="Content\Image\20183\PIC1291451511.gif" />
+    <Content Include="Content\Image\20183\PIC1291451513.gif" />
+    <Content Include="Content\Image\20183\PIC1291451514.gif" />
+    <Content Include="Content\Image\20183\PIC1291451515.gif" />
+    <Content Include="Content\Image\20183\PIC1291451516.gif" />
+    <Content Include="Content\Image\20183\PIC1291451517.gif" />
+    <Content Include="Content\Image\20183\PIC1291451518.gif" />
+    <Content Include="Content\Image\20183\PIC1291451519.gif" />
+    <Content Include="Content\Image\20183\전산회계운용사2급20180908%28학생용%29.xml" />
+    <Content Include="Content\Image\20183\전산회계운용사2급20180908%28학생용%29.xsl" />
+    <Content Include="Content\Image\20191\PIC1291449840.gif" />
+    <Content Include="Content\Image\20191\PIC1291449841.gif" />
+    <Content Include="Content\Image\20191\PIC1291449842.gif" />
+    <Content Include="Content\Image\20191\PIC1291449843.gif" />
+    <Content Include="Content\Image\20191\PIC1291449844.gif" />
+    <Content Include="Content\Image\20191\PIC1291449845.gif" />
+    <Content Include="Content\Image\20191\PIC1291449846.gif" />
+    <Content Include="Content\Image\20191\PIC1291449847.gif" />
+    <Content Include="Content\Image\20191\PIC1291449848.gif" />
+    <Content Include="Content\Image\20191\PIC1291449849.gif" />
+    <Content Include="Content\Image\20191\PIC1291449850.gif" />
+    <Content Include="Content\Image\20191\PIC1291449851.gif" />
+    <Content Include="Content\Image\20191\PIC1291449852.gif" />
+    <Content Include="Content\Image\20191\PIC1291449853.gif" />
+    <Content Include="Content\Image\20191\PIC1291449854.gif" />
+    <Content Include="Content\Image\20191\PIC1291449856.gif" />
+    <Content Include="Content\Image\20191\PIC1291449857.gif" />
+    <Content Include="Content\Image\20191\PIC1291449858.gif" />
+    <Content Include="Content\Image\20191\PIC1291449859.gif" />
+    <Content Include="Content\Image\20191\PIC1291449860.gif" />
+    <Content Include="Content\Image\20191\PIC1291449861.gif" />
+    <Content Include="Content\Image\20191\PIC1291449862.gif" />
+    <Content Include="Content\Image\20191\PIC1291449863.gif" />
+    <Content Include="Content\Image\20191\PIC1291449864.gif" />
+    <Content Include="Content\Image\20191\PIC1291449865.gif" />
+    <Content Include="Content\Image\20191\PIC1291449866.gif" />
+    <Content Include="Content\Image\20191\PIC1291449867.gif" />
+    <Content Include="Content\Image\20191\PIC1291449868.gif" />
+    <Content Include="Content\Image\20191\PIC1291449869.gif" />
+    <Content Include="Content\Image\20191\PIC1291449870.gif" />
+    <Content Include="Content\Image\20191\PIC1291449871.gif" />
+    <Content Include="Content\Image\20191\전산회계운용사2급20190209%28학생용%29.xml" />
+    <Content Include="Content\Image\20191\전산회계운용사2급20190209%28학생용%29.xsl" />
+    <Content Include="Content\Image\20192\PIC1291446361.gif" />
+    <Content Include="Content\Image\20192\PIC1291446362.gif" />
+    <Content Include="Content\Image\20192\PIC1291446363.gif" />
+    <Content Include="Content\Image\20192\PIC1291446364.gif" />
+    <Content Include="Content\Image\20192\PIC1291446365.gif" />
+    <Content Include="Content\Image\20192\PIC1291446366.gif" />
+    <Content Include="Content\Image\20192\PIC1291446367.gif" />
+    <Content Include="Content\Image\20192\PIC1291446369.gif" />
+    <Content Include="Content\Image\20192\PIC1291446370.gif" />
+    <Content Include="Content\Image\20192\PIC1291446371.gif" />
+    <Content Include="Content\Image\20192\PIC1291446372.gif" />
+    <Content Include="Content\Image\20192\PIC1291446373.gif" />
+    <Content Include="Content\Image\20192\PIC1291446374.gif" />
+    <Content Include="Content\Image\20192\PIC1291446375.gif" />
+    <Content Include="Content\Image\20192\PIC1291446376.gif" />
+    <Content Include="Content\Image\20192\PIC1291446377.gif" />
+    <Content Include="Content\Image\20192\PIC1291446378.gif" />
+    <Content Include="Content\Image\20192\PIC1291446379.gif" />
+    <Content Include="Content\Image\20192\PIC1291446380.gif" />
+    <Content Include="Content\Image\20192\PIC1291446381.gif" />
+    <Content Include="Content\Image\20192\PIC1291446382.gif" />
+    <Content Include="Content\Image\20192\PIC1291446383.gif" />
+    <Content Include="Content\Image\20192\PIC1291446384.gif" />
+    <Content Include="Content\Image\20192\PIC1291446385.gif" />
+    <Content Include="Content\Image\20192\PIC1291446386.gif" />
+    <Content Include="Content\Image\20192\PIC1291446387.gif" />
+    <Content Include="Content\Image\20192\PIC1291446388.gif" />
+    <Content Include="Content\Image\20192\PIC1291446389.gif" />
+    <Content Include="Content\Image\20192\PIC1291446390.gif" />
+    <Content Include="Content\Image\20192\PIC1291446391.gif" />
+    <Content Include="Content\Image\20192\PIC1291446392.gif" />
+    <Content Include="Content\Image\20192\PIC1291446393.gif" />
+    <Content Include="Content\Image\20192\PIC1291446394.gif" />
+    <Content Include="Content\Image\20192\전산회계운용사2급20190518%28학생용%29.xml" />
+    <Content Include="Content\Image\20192\전산회계운용사2급20190518%28학생용%29.xsl" />
+    <Content Include="Content\Image\20193\PIC1291444988.gif" />
+    <Content Include="Content\Image\20193\PIC1291444989.gif" />
+    <Content Include="Content\Image\20193\PIC1291444990.gif" />
+    <Content Include="Content\Image\20193\PIC1291444991.gif" />
+    <Content Include="Content\Image\20193\PIC1291444992.gif" />
+    <Content Include="Content\Image\20193\PIC1291444993.gif" />
+    <Content Include="Content\Image\20193\PIC1291444994.gif" />
+    <Content Include="Content\Image\20193\PIC1291444996.gif" />
+    <Content Include="Content\Image\20193\PIC1291444997.gif" />
+    <Content Include="Content\Image\20193\PIC1291444998.gif" />
+    <Content Include="Content\Image\20193\PIC1291444999.gif" />
+    <Content Include="Content\Image\20193\PIC1291445000.gif" />
+    <Content Include="Content\Image\20193\PIC1291445001.gif" />
+    <Content Include="Content\Image\20193\PIC1291445002.gif" />
+    <Content Include="Content\Image\20193\PIC1291445003.gif" />
+    <Content Include="Content\Image\20193\PIC1291445004.gif" />
+    <Content Include="Content\Image\20193\PIC1291445005.gif" />
+    <Content Include="Content\Image\20193\PIC1291445006.gif" />
+    <Content Include="Content\Image\20193\전산회계운용사2급20190907%28학생용%29.xml" />
+    <Content Include="Content\Image\20193\전산회계운용사2급20190907%28학생용%29.xsl" />
+    <Content Include="Content\Image\20201\PIC1291442086.gif" />
+    <Content Include="Content\Image\20201\PIC1291442087.gif" />
+    <Content Include="Content\Image\20201\PIC1291442088.gif" />
+    <Content Include="Content\Image\20201\PIC1291442089.gif" />
+    <Content Include="Content\Image\20201\PIC1291442090.gif" />
+    <Content Include="Content\Image\20201\PIC1291442091.gif" />
+    <Content Include="Content\Image\20201\PIC1291442092.gif" />
+    <Content Include="Content\Image\20201\PIC1291442094.gif" />
+    <Content Include="Content\Image\20201\PIC1291442095.gif" />
+    <Content Include="Content\Image\20201\PIC1291442096.gif" />
+    <Content Include="Content\Image\20201\PIC1291442097.gif" />
+    <Content Include="Content\Image\20201\PIC1291442098.gif" />
+    <Content Include="Content\Image\20201\PIC1291442099.gif" />
+    <Content Include="Content\Image\20201\PIC1291442100.gif" />
+    <Content Include="Content\Image\20201\PIC1291442101.gif" />
+    <Content Include="Content\Image\20201\PIC1291442102.gif" />
+    <Content Include="Content\Image\20201\전산회계운용사2급20200209%28학생용%29.xml" />
+    <Content Include="Content\Image\20201\전산회계운용사2급20200209%28학생용%29.xsl" />
+    <Content Include="Content\Image\android-icon-144x144.png" />
+    <Content Include="Content\Image\android-icon-192x192.png" />
+    <Content Include="Content\Image\android-icon-36x36.png" />
+    <Content Include="Content\Image\android-icon-48x48.png" />
+    <Content Include="Content\Image\android-icon-72x72.png" />
+    <Content Include="Content\Image\android-icon-96x96.png" />
+    <Content Include="Content\Image\apple-icon-114x114.png" />
+    <Content Include="Content\Image\apple-icon-120x120.png" />
+    <Content Include="Content\Image\apple-icon-144x144.png" />
+    <Content Include="Content\Image\apple-icon-152x152.png" />
+    <Content Include="Content\Image\apple-icon-180x180.png" />
+    <Content Include="Content\Image\apple-icon-57x57.png" />
+    <Content Include="Content\Image\apple-icon-60x60.png" />
+    <Content Include="Content\Image\apple-icon-72x72.png" />
+    <Content Include="Content\Image\apple-icon-76x76.png" />
+    <Content Include="Content\Image\apple-icon-precomposed.png" />
+    <Content Include="Content\Image\apple-icon.png" />
+    <Content Include="Content\Image\browserconfig.xml" />
+    <Content Include="Content\Image\dead.gif" />
+    <Content Include="Content\Image\emergency.gif" />
+    <Content Include="Content\Image\favicon-16x16.png" />
+    <Content Include="Content\Image\favicon-32x32.png" />
+    <Content Include="Content\Image\favicon-96x96.png" />
+    <Content Include="Content\Image\favicon.ico" />
+    <Content Include="Content\Image\ms-icon-144x144.png" />
+    <Content Include="Content\Image\ms-icon-150x150.png" />
+    <Content Include="Content\Image\ms-icon-310x310.png" />
+    <Content Include="Content\Image\ms-icon-70x70.png" />
+    <Content Include="Content\Image\victory.gif" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\Image\manifest.json" />
+    <Content Include="Content\manifest.json" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.flip.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Review.cshtml" />
+    <Content Include="Views\Home\Test.cshtml" />
+    <Content Include="Views\Home\Library.cshtml" />
+    <Content Include="Views\Home\Insert.cshtml" />
+    <Content Include="Views\Home\Main.cshtml" />
+    <Content Include="Views\Home\Venice.cshtml" />
+    <Content Include="Views\Home\Option.cshtml" />
+    <Content Include="Views\Home\Often.cshtml" />
+    <Content Include="Views\Home\Accounting.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\packages\Microsoft.ML.CpuMath.1.4.0\runtimes\win-x64\nativeassets\netstandard2.0\*.dll" Condition="'$(PlatformTarget)' == 'x64'">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>false</Visible>
+      <Link>%(Filename)%(Extension)</Link>
+    </Content>
+    <Content Include="..\packages\Microsoft.ML.CpuMath.1.4.0\runtimes\win-x86\nativeassets\netstandard2.0\*.dll" Condition="'$(PlatformTarget)' == 'x86'">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>false</Visible>
+      <Link>%(Filename)%(Extension)</Link>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50068</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44334/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>이 프로젝트는 이 컴퓨터에 없는 NuGet 패키지를 참조합니다. 해당 패키지를 다운로드하려면 NuGet 패키지 복원을 사용하십시오. 자세한 내용은 http://go.microsoft.com/fwlink/?LinkID=322105를 참조하십시오. 누락된 파일은 {0}입니다.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.ML.CpuMath.1.4.0\build\netstandard2.0\Microsoft.ML.CpuMath.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ML.CpuMath.1.4.0\build\netstandard2.0\Microsoft.ML.CpuMath.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.ML.1.4.0\build\netstandard2.0\Microsoft.ML.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ML.1.4.0\build\netstandard2.0\Microsoft.ML.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.ML.1.4.0\build\netstandard2.0\Microsoft.ML.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ML.1.4.0\build\netstandard2.0\Microsoft.ML.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.ML.FastTree.1.4.0\build\netstandard2.0\Microsoft.ML.FastTree.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ML.FastTree.1.4.0\build\netstandard2.0\Microsoft.ML.FastTree.props'))" />
+    <Error Condition="!Exists('..\packages\LightGBM.2.2.3\build\LightGBM.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\LightGBM.2.2.3\build\LightGBM.props'))" />
+    <Error Condition="!Exists('..\packages\LightGBM.2.2.3\build\LightGBM.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\LightGBM.2.2.3\build\LightGBM.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.ML.Mkl.Redist.1.4.0\build\netstandard2.0\Microsoft.ML.Mkl.Redist.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ML.Mkl.Redist.1.4.0\build\netstandard2.0\Microsoft.ML.Mkl.Redist.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.ML.Mkl.Components.1.4.0\build\netstandard2.0\Microsoft.ML.Mkl.Components.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ML.Mkl.Components.1.4.0\build\netstandard2.0\Microsoft.ML.Mkl.Components.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.ML.Recommender.0.16.0\build\netstandard2.0\Microsoft.ML.Recommender.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ML.Recommender.0.16.0\build\netstandard2.0\Microsoft.ML.Recommender.props'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Microsoft.ML.1.4.0\build\netstandard2.0\Microsoft.ML.targets" Condition="Exists('..\packages\Microsoft.ML.1.4.0\build\netstandard2.0\Microsoft.ML.targets')" />
+  <Import Project="..\packages\LightGBM.2.2.3\build\LightGBM.targets" Condition="Exists('..\packages\LightGBM.2.2.3\build\LightGBM.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

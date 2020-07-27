@@ -1,0 +1,19 @@
+﻿<div class="option">
+    <div class="line">
+        <a href="javascript:clearStudy();">학습초기화</a>
+    </div>
+</div>
+<div style="width:100%;text-align:right;line-height:40px;vertical-align:bottom">
+    <input type="button" value="처음으로" onclick="location.href='/Home/Main';" style="border: 1px solid #979797;" />
+</div>
+<script type="text/javascript">
+    function clearStudy()
+    {
+        $.ajax({
+            type: "GET",
+            dataType: "text",
+            async: false,
+            url: "/Home/ClearOK"
+        });
+    }
+</script>

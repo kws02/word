@@ -1,0 +1,162 @@
+﻿@using Web.Models
+@model List<복습>
+
+<div class="head">
+    <div class="count">남은건수 : @ViewBag.남은건수</div>
+    <div><input type="button" value="내역으로" onclick="location.href='/Home/Main'" class="button" /></div>
+</div>
+<div class="sidebutton" onclick="left()">◁</div>
+@{
+    int i = 0;
+
+    foreach (var m in Model)
+    {
+    <style type="text/css">
+            .card @Html.Raw("#front" + @i):after, .card @Html.Raw("#back" + @i):after {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                opacity: 0.3;
+                width: 100%;
+                height: 100%;
+                background-image:url('@m.썸네일');
+            }
+    </style>
+
+        <div class="card" @if (i > 0) { @Html.Raw("style='display:none'") ; }>
+            <div class="front" id="@Html.Raw("front" + @i)">
+                <div class="space">
+                    @m.단어<br />
+                    [@m.한글발음]
+                </div>
+            </div>
+            <div class="back" id="@Html.Raw("back" + @i)">
+                <div class="space">
+                    @m.뜻
+                </div>
+            </div>
+        </div>
+        @Html.Hidden("Seq", m.순번)
+        i++;
+    }
+}
+<div class="sidebutton" onclick="right()">▷</div>
+
+<table class="cardfooter" border="0" width="93%" cellpadding="0" cellspacing="0">
+    <tr>
+        <td width="79%" height="50" align="center"><span id="count">1</span>/20</td>
+        <td align="center" height="50">
+            <input id="saveOK" type="button" value="틀리다" onclick="wrongOK()" class="button" />
+        </td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+    //<![CDATA[
+    var n = 0;
+    var seqs = [];
+    var wlongs = [];
+    var last = @Model.Count()-1;
+
+    $(".card").flip();
+
+    $(document).ready(function ()
+    {
+        SaveTest();
+    });
+
+    function SaveTest()
+    {
+        var seq = $("input[name='Seq']").eq(n).val();
+
+        if (seqs.indexOf(seq) > -1)
+            return;
+
+        $.ajax({
+            type: "GET",
+            dataType: "text",
+            data: {
+                "Seq": seq,
+            },
+            async: false,
+            url: "/Home/TestCountUpdate",
+            success: function (data)
+            {
+                if (data == "OK")
+                {
+                    if (seqs.indexOf(seq) == -1)
+                        seqs.push(seq);
+                }
+            }
+        });
+    };
+
+    function left()
+    {
+        if (n > 0)
+        {
+            n--;
+            $(".card").eq(n).css("display", "block");
+            $(".card").eq(n + 1).css("display", "none");
+            $("#count").text(n + 1);
+
+            SaveTest();
+        }
+    }
+
+    function right()
+    {
+        if (n < last)
+        {
+            n++;
+            $(".card").eq(n).css("display", "block");
+            $(".card").eq(n - 1).css("display", "none");
+            $("#count").text(n + 1);
+
+            SaveTest();
+        }
+    }
+
+    function wrongOK()
+    {
+        var seq = $("input[name='Seq']").eq(n).val();
+
+        $.ajax({
+            type: "GET",
+            dataType: "text",
+            data: {
+                "Seq": seq,
+                "Flag": "N"
+            },
+            async: false,
+            url: "/Home/ReviewOK",
+            success: function (data)
+            {
+                if (data == "OK")
+                {
+                    if (wlongs.indexOf(seq) > -1)
+                        return;
+
+                    $.ajax({
+                        type: "GET",
+                        dataType: "text",
+                        data: {
+                            "Seq": seq
+                        },
+                        async: false,
+                        url: "/Home/WrongCountUpdate",
+                        success: function (data)
+                        {
+                            if (data == "OK")
+                            {
+                                if (wlongs.indexOf(seq) == -1)
+                                    wlongs.push(seq);
+                            }
+                        }
+                    });
+                }
+            }
+        });
+    }
+//]]>
+</script>

@@ -1,0 +1,244 @@
+﻿a {
+    text-decoration:none;
+    color:black;
+}
+
+.main {
+    list-style: none;
+    padding: 0px;
+    width:95%;
+}
+
+.main li {
+    width: 90%;
+    padding-left: 15%;
+    font-size: 30px;
+    border-top: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    vertical-align:middle;
+    line-height: 60px;
+    display: inline-block;
+}
+
+.main li:nth-last-child(1) {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.list {
+    list-style:none;
+    padding:0px;
+    width:100%;
+}
+
+.list li {
+    font-size:20px;
+    line-height:40px;
+    vertical-align:middle;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.list li .left {
+    float: left;
+    width:69%;
+    margin-left:6px;
+}
+
+.list li .buttons {
+    height:43px;
+}
+
+.button {
+    border: 1px solid #979797;
+    width: 55px;
+    height: 25px;
+}
+
+.first {
+    border: 1px solid #979797;
+    width: 75px;
+    height: 25px;
+}
+
+.first2 {
+    border: 1px solid #979797;
+    width: 55px;
+    height: 25px;
+}
+
+.list span[name='hint'] {
+    cursor:pointer;
+    margin-left:10px;
+}
+
+.list span[name='original'] {
+    cursor: pointer;
+    margin-left:10px;
+}
+
+.list .headLeft {
+    float:left;
+    width:84%;
+}
+
+.list .headLeft2 {
+    float: left;
+    width: 49%;
+}
+
+.table td, .table th {
+    border-bottom: 1px solid #979797;
+}
+
+.more {
+    width: 100%;
+    line-height:40px;
+    border: 1px solid #e6e6e6;
+    text-align:center;
+    vertical-align:middle;
+    cursor:pointer;
+    display:none;
+}
+
+.head {
+    margin-right: 7%;
+    height: 30px;
+    text-align: right;
+}
+
+.head .count{
+    float:left;
+    width:35%;
+}
+
+.head .button {
+    border: 1px solid #979797;
+    width: 75px;
+    height: 25px;
+}
+
+.cardfooter .button {
+    border: 1px solid #979797;
+    width: 75px;
+    height: 25px;
+}
+
+.sidebutton {
+    float: left;
+    min-width: 7%;
+    line-height: 500px;
+    vertical-align: middle;
+    text-align: center;
+    cursor:pointer;
+}
+
+.card {
+    float: left;
+    width: 85%;
+    border: 1px solid #e6e6e6;
+    height: 500px;
+}
+
+.card div[id^='front'], .card div[id^='back'] {
+    background: #eaeaea;
+    font-size:30px;
+    position: relative;
+    z-index: 1;
+}
+
+.card .front .space, .card .back .space {
+    margin-top: 230px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.game {
+    width: 100%;
+    height: 500px;
+    background: #ffdee7;
+}
+
+.game .human {
+    position: absolute;
+    top: 358px;
+    left: 30%
+}
+
+.game .human img {
+    width: 150px;
+    height: 150px;
+    vertical-align: bottom;
+}
+
+.game .body {
+    background: #588dfa;
+    width: 96%;
+    height: 11px;
+    position: absolute;
+    top: 497px
+}
+
+.bottom {
+    line-height: 50px;
+    vertical-align: bottom;
+    text-align: right
+}
+
+.bottom .button {
+    border: 1px solid #979797;
+    width: 150px;
+    height: 25px;    
+}
+
+.wordTable td {
+    border-bottom: 1px solid #CCCCCC;
+    padding: 5px;
+    cursor: pointer
+}
+
+div[id^='obj'] {
+    top: 10px;
+    position: absolute;
+    border: 1px solid #CCCCCC;
+    background: #FFFFFF;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.ocean {
+    background: #588dfa;
+    width: 96%;
+    height: 11px;
+    position: absolute;
+}
+
+.option .line {
+    line-height: 40px;
+    border-bottom: 1px solid #b4b4b4;
+    vertical-align: middle;
+    width:100%;
+}
+
+.block {
+    background: #eaeaea;
+    line-height: 40px;
+    width: 100%;
+    cursor:pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.buttons {
+    text-align: right;
+    width: 100%
+}
+
+.buttons input[type='button'] {
+    border: 1px solid #979797;
+    height: 25px;
+}

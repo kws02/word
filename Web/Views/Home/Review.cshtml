@@ -1,0 +1,139 @@
+﻿<div>
+    <ul class="list">
+        <li>
+            <div class="headLeft"><input type="button" value="처음으로" class="first" onclick="location.href='/Home/Main'" /></div>
+            <div>@Html.CheckBox("chkFlag", false, new { onclick = "InitJson()" }) 전체</div>
+        </li>
+    </ul>
+</div>
+<div class="more" onclick="more('N')">다음보기</div>
+
+<script type="text/javascript">
+    var list = {};
+    var totalCount = 0;
+    var page = 0;
+
+    $(document).ready(function ()
+    {
+        InitJson();
+    });
+
+    function InitJson()
+    {        
+        var flag = $("#chkFlag").is(":checked") ? "Y" : "N";
+        page = 0;
+
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            data: { "All": flag },
+            async: false,
+            url: "/Home/ReviewJson",
+            success: function (data)
+            {
+                list = data;
+                totalCount = data.length;
+                
+                more("Y");
+            }
+        });            
+    }
+
+    function more(first)
+    {
+        var html = "";
+        var count = 0;
+        var startPage = page * 40;
+        var endPage = (page + 1) * 40;
+
+        if (first == "Y")
+            $(".list li").not(".list li:first").remove();
+
+        for (var i = startPage; i < endPage; i++)
+        {
+            if (i >= list.length)
+                break;
+
+            html += "<li " + (list[i].암기여부 == "Y" ? "style='background:#f1f1f1'" : "") + ">";
+            html += "   <div>";
+            html += "       <div class='left'>" + list[i].단어 + " [" + list[i].한글발음 + "]</div>";
+            html += "       <div style='height:40px;'></div>";
+            html += "   </div>";
+            html += "   <div>";
+            html += "       <div class='left' style='width:84%'>";
+            html += "           <span name='hint' onclick='hint()'>" + list[i].힌트 + "</span>";
+            html += "           <span name='original' onclick='hint()' style='display:none;'>" + list[i].뜻 + "</span>";
+            html += "       </div>";
+            html += "       <div>";
+            if (list[i].암기여부 == "N")
+                html += "       <input id='b" + list[i].순번 + "' type='button' value='완료' class='button' onclick=\"SaveOK('" + list[i].순번 + "', 'Y');\" />";
+            else
+                html += "       <input id='b" + list[i].순번 + "' type='button' value='해제' class='button' onclick=\"SaveOK('" + list[i].순번 + "', 'N');\" />";
+            html += "       </div>";
+            html += "   </div>";
+            html += "</li>";
+
+            count++;
+        };
+            
+        $(".list").append(html);
+
+        totalCount -= count;
+        page++;
+
+        if (totalCount > 0)
+            $(".more").css("display", "block");
+        else
+            $(".more").css("display", "none");
+    }
+
+    function hint()
+    {
+        var obj = window.event.srcElement;
+
+        if ($(obj).attr("name") == "hint")
+        {
+            $(obj).css("display", "none");
+            $(obj).next().css("display", "block");
+        }
+        else
+        {
+            $(obj).css("display", "none");
+            $(obj).prev().css("display", "block");
+        }
+    }
+
+    function SaveOK(seq, flag)
+    {
+        $.ajax({
+            type: "GET",
+            dataType: "text",
+            data: {
+                "Seq": seq,
+                "Flag": flag
+            },
+            async: false,
+            url: "/Home/ReviewOK",
+            success: function (data)
+            {
+                if (data == "OK")
+                {
+                    if (flag == "Y")
+                    {
+                        $("#b" + seq).closest("li").css("background", "#f1f1f1");
+                        $("#b" + seq).attr("value", "해제");
+                        $("#b" + seq).attr("onclick", "SaveOK('" + seq + "', 'N');");
+                    }
+                    else
+                    {
+                        $("#b" + seq).closest("li").css("background", "#ffffff");
+                        $("#b" + seq).attr("value", "완료");
+                        $("#b" + seq).attr("onclick", "SaveOK('" + seq + "', 'Y');");
+                    }
+                }
+                else
+                    alert("오류가 발생하였습니다.");
+            }
+        });
+    }
+</script>

@@ -1,0 +1,43 @@
+﻿@using Web.Models
+@model List<복습>
+
+<table width="100%">
+    <tr>
+        @{
+            int i = 0;
+
+            foreach (var m in Model.OrderBy(x => x.단어))
+            {
+                if (i > 0 && i % 4 == 0)
+                {
+                    @Html.Raw("</tr><tr>");
+                }
+
+                @Html.Raw("" +
+                    "<td width='25%' align='center'>" +
+                    "   <div class='block'>" +
+                    "       <div class='front'>" + m.단어 + "</div>" +
+                    "       <div class='back'>" + m.뜻 + "</div>" +
+                    "   </div>" +
+                    "</td>"
+                );
+
+                i++;
+            }
+        }
+    </tr>
+</table>
+<div class="buttons">
+    <input type="button" value="처음으로" onclick="location.href='/Home/Main'" />
+</div>
+<script>
+    $(".block").flip({
+        axis: 'x'
+    });
+
+    $(".block").click(function ()
+    {
+        $("table td").removeAttr("style");
+        $(this).closest("td").attr("style", "box-shadow: 0 0 0 3px #DDDDDD inset; ");
+    });
+</script>

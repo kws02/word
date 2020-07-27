@@ -1,0 +1,88 @@
+﻿@using Web.Models
+@model 복습
+
+    <table cellpadding="0" cellspacing="0" class="table" width="100%">
+        <tr>
+            <th width="20%" height="35">단어</th>
+            <td width="80%" align="center">@Html.TextBox("Word", Model.단어, new { style = "width:240px;text-transform:lowercase", onkeyup="$(this).val($(this).val().toLowerCase());", onkeydown = "if(event.keyCode==13)Ok();" })</td>
+        </tr>
+        <tr>
+            <th width="20%" height="35">한글발음</th>
+            <td width="80%" align="center">@Html.TextBox("Hangul", Model.한글발음, new { style = "width:240px;", onkeydown = "if(event.keyCode==13)Ok();" })</td>
+        </tr>
+        <tr>
+            <th width="20%" height="35">뜻</th>
+            <td width="80%" align="center">@Html.TextBox("Mean", Model.뜻, new { style = "width:240px;", onkeydown = "if(event.keyCode==13)Ok();" })</td>
+        </tr>
+        <tr>
+            <td colspan="2" height="50" align="right">
+                <input type="button" value="확인" class="button" onclick="Ok();" />
+                <input type="button" value="뒤로" class="button" onclick="Back();" />
+            </td>
+        </tr>
+    </table>
+
+<script>
+    function Ok()
+    {
+        if (!$("#Word").val())
+        {
+            alert("단어를 입력해주세요");
+            return;
+        }
+
+        if (!$("#Mean").val())
+        {
+            alert("뜻을 입력해주세요");
+            return;
+        }
+
+        @if(@Model.순번 == 0)
+        {
+            @Html.Raw(" " +
+                "var dupCheck = 'OK';                                                               " + "\r\n" +
+                "$.ajax({                                                                           " + "\r\n" +
+                "   type: 'GET',                                                                    " + "\r\n" +
+                "   dataType: 'text',                                                               " + "\r\n" +
+                "   async: false,                                                                   " + "\r\n" +
+                "   data: { 'Word': $('#Word').val() },                                             " + "\r\n" +
+                "   url: '/Home/CheckWord',                                                         " + "\r\n" +
+                "   success: function (data)                                                        " + "\r\n" +
+                "   {                                                                               " + "\r\n" +
+                "       dupCheck = data;                                                            " + "\r\n" +
+                "   }                                                                               " + "\r\n" +
+                "});                                                                                " + "\r\n" +
+                "if (dupCheck == 'DUP')                                                             " + "\r\n" +
+                "{                                                                                  " + "\r\n" +
+                "   if (!confirm('이미 중복된 단어가 존재합니다.\\r\\n업데이트 하시겠습니까?'))     " + "\r\n" +
+                "       return;                                                                     " + "\r\n" +
+                "}                                                                                  " + "\r\n"
+            );
+        }
+
+        $.ajax({
+            type: "POST",
+            dataType: "text",
+            async: false,
+            data: {
+                "Seq": @Model.순번,
+                "Word": $("#Word").val(),
+                "Hangul": $("#Hangul").val(),
+                "Mean": $("#Mean").val()
+            },
+            url: "/Home/UpdateOK",
+            success: function (data)
+            {
+                if (data == "OK")
+                    alert("수정이 완료되었습니다.");
+                else
+                    alert(data);
+            }
+        });        
+    }
+
+    function Back()
+    {
+        location.href = "@ViewBag.Url?Page=@ViewBag.Page&Scroll=@ViewBag.Scroll&Search=@ViewBag.Search";
+    }
+</script>

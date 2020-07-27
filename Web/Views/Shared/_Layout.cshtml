@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>내단어장</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="@Url.Content("~/Content/Image/apple-icon-57x57.png")">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="@Url.Content("~/Content/Image/apple-icon-60x60.png")">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="@Url.Content("~/Content/Image/apple-icon-72x72.png")">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="@Url.Content("~/Content/Image/apple-icon-76x76.png")">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="@Url.Content("~/Content/Image/apple-icon-114x114.png")">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="@Url.Content("~/Content/Image/apple-icon-120x120.png")">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="@Url.Content("~/Content/Image/apple-icon-144x144.png")">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="@Url.Content("~/Content/Image/apple-icon-152x152.png")">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="@Url.Content("~/Content/Image/apple-icon-180x180.png")">
+    <link rel="icon" type="image/png" sizes="192x192" href="@Url.Content("~/Content/Image/android-icon-192x192.png")">
+    <link rel="icon" type="image/png" sizes="32x32" href="@Url.Content("~/Content/Image/favicon-32x32.png")">
+    <link rel="icon" type="image/png" sizes="96x96" href="@Url.Content("~/Content/Image/favicon-96x96.png")">
+    <link rel="icon" type="image/png" sizes="16x16" href="@Url.Content("~/Content/Image/favicon-16x16.png")">
+    <link rel="manifest" href="@Url.Content("~/Content/Image/manifest.json")">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="@Url.Content("~/Content/Image/ms-icon-144x144.png")">
+    <meta name="theme-color" content="#ffffff">
+    <link href="@Url.Content("~/content/Site.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-3.4.1.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.flip.min.js")" type="text/javascript"></script>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

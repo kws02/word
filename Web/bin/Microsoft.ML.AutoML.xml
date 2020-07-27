@@ -1,0 +1,1532 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.ML.AutoML</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.ML.AutoML.AutoCatalog">
+            <summary>
+            A catalog of all available AutoML tasks.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.AutoCatalog.CreateRegressionExperiment(System.UInt32)">
+            <summary>
+            Creates a new AutoML experiment to run on a regression dataset.
+            </summary>
+            <param name="maxExperimentTimeInSeconds">Maximum number of seconds that experiment will run.</param>
+            <returns>A new AutoML regression experiment.</returns>
+            <remarks>
+            <para>See <see cref="T:Microsoft.ML.AutoML.RegressionExperiment"/> for a more detailed code example of an AutoML regression experiment.</para>
+            <para>An experiment may run for longer than <paramref name="maxExperimentTimeInSeconds"/>.
+            This is because once AutoML starts training an ML.NET model, AutoML lets the
+            model train to completion. For instance, if the first model
+            AutoML trains takes 4 hours, and the second model trained takes 5 hours,
+            but <paramref name="maxExperimentTimeInSeconds"/> was the number of seconds in 6 hours,
+            the experiment will run for 4 + 5 = 9 hours (not 6 hours).</para>
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.AutoCatalog.CreateRegressionExperiment(Microsoft.ML.AutoML.RegressionExperimentSettings)">
+            <summary>
+            Creates a new AutoML experiment to run on a regression dataset.
+            </summary>
+            <param name="experimentSettings">Settings for the AutoML experiment.</param>
+            <returns>A new AutoML regression experiment.</returns>
+            <remarks>
+            See <see cref="T:Microsoft.ML.AutoML.RegressionExperiment"/> for a more detailed code example of an AutoML regression experiment.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.AutoCatalog.CreateBinaryClassificationExperiment(System.UInt32)">
+            <summary>
+            Creates a new AutoML experiment to run on a binary classification dataset.
+            </summary>
+            <param name="maxExperimentTimeInSeconds">Maximum number of seconds that experiment will run.</param>
+            <returns>A new AutoML binary classification experiment.</returns>
+            <remarks>
+            <para>See <see cref="T:Microsoft.ML.AutoML.BinaryClassificationExperiment"/> for a more detailed code example of an AutoML binary classification experiment.</para>
+            <para>An experiment may run for longer than <paramref name="maxExperimentTimeInSeconds"/>.
+            This is because once AutoML starts training an ML.NET model, AutoML lets the
+            model train to completion. For instance, if the first model
+            AutoML trains takes 4 hours, and the second model trained takes 5 hours,
+            but <paramref name="maxExperimentTimeInSeconds"/> was the number of seconds in 6 hours,
+            the experiment will run for 4 + 5 = 9 hours (not 6 hours).</para>
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.AutoCatalog.CreateBinaryClassificationExperiment(Microsoft.ML.AutoML.BinaryExperimentSettings)">
+            <summary>
+            Creates a new AutoML experiment to run on a binary classification dataset.
+            </summary>
+            <param name="experimentSettings">Settings for the AutoML experiment.</param>
+            <returns>A new AutoML binary classification experiment.</returns>
+            <remarks>
+            See <see cref="T:Microsoft.ML.AutoML.BinaryClassificationExperiment"/> for a more detailed code example of an AutoML binary classification experiment.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.AutoCatalog.CreateMulticlassClassificationExperiment(System.UInt32)">
+            <summary>
+            Creates a new AutoML experiment to run on a multiclass classification dataset.
+            </summary>
+            <param name="maxExperimentTimeInSeconds">Maximum number of seconds that experiment will run.</param>
+            <returns>A new AutoML multiclass classification experiment.</returns>
+            <remarks>
+            <para>See <see cref="T:Microsoft.ML.AutoML.MulticlassClassificationExperiment"/> for a more detailed code example of an AutoML multiclass classification experiment.</para>
+            <para>An experiment may run for longer than <paramref name="maxExperimentTimeInSeconds"/>.
+            This is because once AutoML starts training an ML.NET model, AutoML lets the
+            model train to completion. For instance, if the first model
+            AutoML trains takes 4 hours, and the second model trained takes 5 hours,
+            but <paramref name="maxExperimentTimeInSeconds"/> was the number of seconds in 6 hours,
+            the experiment will run for 4 + 5 = 9 hours (not 6 hours).</para>
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.AutoCatalog.CreateMulticlassClassificationExperiment(Microsoft.ML.AutoML.MulticlassExperimentSettings)">
+            <summary>
+            Creates a new AutoML experiment to run on a multiclass classification dataset.
+            </summary>
+            <param name="experimentSettings">Settings for the AutoML experiment.</param>
+            <returns>A new AutoML multiclass classification experiment.</returns>
+            <remarks>
+            See <see cref="T:Microsoft.ML.AutoML.MulticlassClassificationExperiment"/> for a more detailed code example of an AutoML multiclass classification experiment.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.AutoCatalog.CreateRecommendationExperiment(System.UInt32)">
+            <summary>
+            Creates a new AutoML experiment to run on a recommendation classification dataset.
+            </summary>
+            <param name="maxExperimentTimeInSeconds">Maximum number of seconds that experiment will run.</param>
+            <returns>A new AutoML recommendation classification experiment.</returns>
+            <remarks>
+            <para>See <see cref="T:Microsoft.ML.AutoML.RecommendationExperiment"/> for a more detailed code example of an AutoML multiclass classification experiment.</para>
+            <para>An experiment may run for longer than <paramref name="maxExperimentTimeInSeconds"/>.
+            This is because once AutoML starts training an ML.NET model, AutoML lets the
+            model train to completion. For instance, if the first model
+            AutoML trains takes 4 hours, and the second model trained takes 5 hours,
+            but <paramref name="maxExperimentTimeInSeconds"/> was the number of seconds in 6 hours,
+            the experiment will run for 4 + 5 = 9 hours (not 6 hours).</para>
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.AutoCatalog.CreateRecommendationExperiment(Microsoft.ML.AutoML.RecommendationExperimentSettings)">
+            <summary>
+            Creates a new AutoML experiment to run on a recommendation dataset.
+            </summary>
+            <param name="experimentSettings">Settings for the AutoML experiment.</param>
+            <returns>A new AutoML recommendation experiment.</returns>
+            <remarks>
+            See <see cref="T:Microsoft.ML.AutoML.RecommendationExperiment"/> for a more detailed code example of an AutoML recommendation experiment.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.AutoCatalog.InferColumns(System.String,System.String,System.Nullable{System.Char},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Boolean,System.Boolean)">
+            <summary>
+            Infers information about the columns of a dataset in a file located at <paramref name="path"/>.
+            </summary>
+            <param name="path">Path to a dataset file.</param>
+            <param name="labelColumnName">The name of the label column.</param>
+            <param name="separatorChar">The character used as separator between data elements in a row. If <see langword="null"/>, AutoML will try to infer this value.</param>
+            <param name="allowQuoting">Whether the file can contain columns defined by a quoted string. If <see langword="null"/>, AutoML will try to infer this value.</param>
+            <param name="allowSparse">Whether the file can contain numerical vectors in sparse format. If <see langword="null"/>, AutoML will try to infer this value.</param>
+            <param name="trimWhitespace">Whether trailing whitespace should be removed from dataset file lines.</param>
+            <param name="groupColumns">Whether to group together (when possible) original columns in the dataset file into vector columns in the resulting data structures. See <see cref="T:Microsoft.ML.Data.TextLoader.Range"/> for more information.</param>
+            <returns>Information inferred about the columns in the provided dataset.</returns>
+            <remarks>
+            Infers information about the name, data type, and purpose of each column.
+            The returned <see cref="P:Microsoft.ML.AutoML.ColumnInferenceResults.TextLoaderOptions" /> can be used to
+            instantiate a <see cref="T:Microsoft.ML.Data.TextLoader" />. The <see cref="T:Microsoft.ML.Data.TextLoader" /> can be used to
+            obtain an <see cref="T:Microsoft.ML.IDataView"/> that can be fed into an AutoML experiment,
+            or used elsewhere in the ML.NET ecosystem (ie in <see cref="M:Microsoft.ML.IEstimator`1.Fit(Microsoft.ML.IDataView)"/>.
+            The <see cref="T:Microsoft.ML.AutoML.ColumnInformation"/> contains the inferred purpose of each column in the dataset.
+            (For instance, is the column categorical, numeric, or text data? Should the column be ignored? Etc.)
+            The <see cref="T:Microsoft.ML.AutoML.ColumnInformation"/> can be inspected and modified (or kept as is) and used by an AutoML experiment.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.AutoCatalog.InferColumns(System.String,Microsoft.ML.AutoML.ColumnInformation,System.Nullable{System.Char},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Boolean,System.Boolean)">
+            <summary>
+            Infers information about the columns of a dataset in a file located at <paramref name="path"/>.
+            </summary>
+            <param name="path">Path to a dataset file.</param>
+            <param name="columnInformation">Column information for the dataset.</param>
+            <param name="separatorChar">The character used as separator between data elements in a row. If <see langword="null"/>, AutoML will try to infer this value.</param>
+            <param name="allowQuoting">Whether the file can contain columns defined by a quoted string. If <see langword="null"/>, AutoML will try to infer this value.</param>
+            <param name="allowSparse">Whether the file can contain numerical vectors in sparse format. If <see langword="null"/>, AutoML will try to infer this value.</param>
+            <param name="trimWhitespace">Whether trailing whitespace should be removed from dataset file lines.</param>
+            <param name="groupColumns">Whether to group together (when possible) original columns in the dataset file into vector columns in the resulting data structures. See <see cref="T:Microsoft.ML.Data.TextLoader.Range"/> for more information.</param>
+            <returns>Information inferred about the columns in the provided dataset.</returns>
+            <remarks>
+            Infers information about the name, data type, and purpose of each column.
+            The returned <see cref="P:Microsoft.ML.AutoML.ColumnInferenceResults.TextLoaderOptions" /> can be used to
+            instantiate a <see cref="T:Microsoft.ML.Data.TextLoader" />. The <see cref="T:Microsoft.ML.Data.TextLoader" /> can be used to
+            obtain an <see cref="T:Microsoft.ML.IDataView"/> that can be fed into an AutoML experiment,
+            or used elsewhere in the ML.NET ecosystem (ie in <see cref="M:Microsoft.ML.IEstimator`1.Fit(Microsoft.ML.IDataView)"/>.
+            The <see cref="T:Microsoft.ML.AutoML.ColumnInformation"/> contains the inferred purpose of each column in the dataset.
+            (For instance, is the column categorical, numeric, or text data? Should the column be ignored? Etc.)
+            The <see cref="T:Microsoft.ML.AutoML.ColumnInformation"/> can be inspected and modified (or kept as is) and used by an AutoML experiment.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.AutoCatalog.InferColumns(System.String,System.UInt32,System.Boolean,System.Nullable{System.Char},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Boolean,System.Boolean)">
+            <summary>
+            Infers information about the columns of a dataset in a file located at <paramref name="path"/>.
+            </summary>
+            <param name="path">Path to a dataset file.</param>
+            <param name="labelColumnIndex">Column index of the label column in the dataset.</param>
+            <param name="hasHeader">Whether or not the dataset file has a header row.</param>
+            <param name="separatorChar">The character used as separator between data elements in a row. If <see langword="null"/>, AutoML will try to infer this value.</param>
+            <param name="allowQuoting">Whether the file can contain columns defined by a quoted string. If <see langword="null"/>, AutoML will try to infer this value.</param>
+            <param name="allowSparse">Whether the file can contain numerical vectors in sparse format. If <see langword="null"/>, AutoML will try to infer this value.</param>
+            <param name="trimWhitespace">Whether trailing whitespace should be removed from dataset file lines.</param>
+            <param name="groupColumns">Whether to group together (when possible) original columns in the dataset file into vector columns in the resulting data structures. See <see cref="T:Microsoft.ML.Data.TextLoader.Range"/> for more information.</param>
+            <returns>Information inferred about the columns in the provided dataset.</returns>
+            <remarks>
+            Infers information about the name, data type, and purpose of each column.
+            The returned <see cref="P:Microsoft.ML.AutoML.ColumnInferenceResults.TextLoaderOptions" /> can be used to
+            instantiate a <see cref="T:Microsoft.ML.Data.TextLoader" />. The <see cref="T:Microsoft.ML.Data.TextLoader" /> can be used to
+            obtain an <see cref="T:Microsoft.ML.IDataView"/> that can be fed into an AutoML experiment,
+            or used elsewhere in the ML.NET ecosystem (ie in <see cref="M:Microsoft.ML.IEstimator`1.Fit(Microsoft.ML.IDataView)"/>.
+            The <see cref="T:Microsoft.ML.AutoML.ColumnInformation"/> contains the inferred purpose of each column in the dataset.
+            (For instance, is the column categorical, numeric, or text data? Should the column be ignored? Etc.)
+            The <see cref="T:Microsoft.ML.AutoML.ColumnInformation"/> can be inspected and modified (or kept as is) and used by an AutoML experiment.
+            </remarks>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.BinaryExperimentSettings">
+            <summary>
+            Settings for AutoML experiments on binary classification datasets.
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.BinaryExperimentSettings.OptimizingMetric">
+            <summary>
+            Metric that AutoML will try to optimize over the course of the experiment.
+            </summary>
+            <value>The default value is <see cref="F:Microsoft.ML.AutoML.BinaryClassificationMetric.Accuracy"/>.</value>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.BinaryExperimentSettings.Trainers">
+            <summary>
+            Collection of trainers the AutoML experiment can leverage.
+            </summary>
+            <value>The default value is a collection auto-populated with all possible trainers (all values of <see cref="T:Microsoft.ML.AutoML.BinaryClassificationTrainer" />).</value>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.BinaryExperimentSettings.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:Microsoft.ML.AutoML.BinaryExperimentSettings"/>.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.BinaryClassificationMetric">
+            <summary>
+            Binary classification metric that AutoML will aim to optimize in its sweeping process during an experiment.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.BinaryClassificationMetric.Accuracy">
+            <summary>
+            See <see cref="P:Microsoft.ML.Data.BinaryClassificationMetrics.Accuracy"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.BinaryClassificationMetric.AreaUnderRocCurve">
+            <summary>
+            See <see cref="P:Microsoft.ML.Data.BinaryClassificationMetrics.AreaUnderRocCurve"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.BinaryClassificationMetric.AreaUnderPrecisionRecallCurve">
+            <summary>
+            See <see cref="P:Microsoft.ML.Data.BinaryClassificationMetrics.AreaUnderPrecisionRecallCurve"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.BinaryClassificationMetric.F1Score">
+            <summary>
+            See <see cref="P:Microsoft.ML.Data.BinaryClassificationMetrics.F1Score"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.BinaryClassificationMetric.PositivePrecision">
+            <summary>
+            See <see cref="P:Microsoft.ML.Data.BinaryClassificationMetrics.PositivePrecision"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.BinaryClassificationMetric.PositiveRecall">
+            <summary>
+            See <see cref="P:Microsoft.ML.Data.BinaryClassificationMetrics.PositiveRecall"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.BinaryClassificationMetric.NegativePrecision">
+            <summary>
+            See <see cref="P:Microsoft.ML.Data.BinaryClassificationMetrics.NegativePrecision"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.BinaryClassificationMetric.NegativeRecall">
+            <summary>
+            See <see cref="P:Microsoft.ML.Data.BinaryClassificationMetrics.NegativeRecall"/>.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.BinaryClassificationTrainer">
+            <summary>
+            Enumeration of ML.NET binary classification trainers used by AutoML.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.BinaryClassificationTrainer.AveragedPerceptron">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.AveragedPerceptronTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.BinaryClassificationTrainer.FastForest">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.BinaryClassificationTrainer.FastTree">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.BinaryClassificationTrainer.LightGbm">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.BinaryClassificationTrainer.LinearSvm">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.LinearSvmTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.BinaryClassificationTrainer.LbfgsLogisticRegression">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.BinaryClassificationTrainer.SdcaLogisticRegression">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.SdcaLogisticRegressionBinaryTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.BinaryClassificationTrainer.SgdCalibrated">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.SgdCalibratedTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.BinaryClassificationTrainer.SymbolicSgdLogisticRegression">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer"/>.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.BinaryClassificationExperiment">
+            <summary>
+            AutoML experiment on binary classification datasets.
+            </summary>
+            <example>
+            <format type="text/markdown">
+            <![CDATA[
+             [!code-csharp[BinaryClassificationExperiment](~/../docs/samples/docs/samples/Microsoft.ML.AutoML.Samples/BinaryClassificationExperiment.cs)]
+            ]]></format>
+            </example>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.ColumnInferenceResults">
+            <summary>
+            Contains information AutoML inferred about columns in a dataset.
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.ColumnInferenceResults.TextLoaderOptions">
+            <summary>
+            Inferred <see cref="T:Microsoft.ML.Data.TextLoader.Options" /> for the dataset.
+            </summary>
+            <remarks>
+            Can be used to instantiate a new <see cref="T:Microsoft.ML.Data.TextLoader" /> to load
+            data into an <see cref="T:Microsoft.ML.IDataView" />.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.ColumnInferenceResults.ColumnInformation">
+            <summary>
+            Information about the inferred columns in the dataset.
+            </summary>
+            <remarks>
+            <para>Contains the inferred purposes of each column. See <see cref="T:Microsoft.ML.AutoML.ColumnInformation"/> for more details.</para>
+            <para>This can be fed to the AutoML API when running an experiment.
+            See <typeref cref="M:Microsoft.ML.AutoML.ExperimentBase`2.Execute(Microsoft.ML.IDataView,Microsoft.ML.AutoML.ColumnInformation,Microsoft.ML.IEstimator{Microsoft.ML.ITransformer},System.IProgress{Microsoft.ML.AutoML.RunDetail{`0}})" />
+            for example.</para>
+            </remarks>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.ColumnInformation">
+            <summary>
+            Information about the columns in a dataset.
+            </summary>
+            <remarks>
+            <para>Contains information about the purpose of each column in the dataset. For instance,
+            it enumerates the dataset columns that AutoML should treat as categorical,
+            the columns AutoML should ignore, which column is the label, etc.</para>
+            <para><see cref="T:Microsoft.ML.AutoML.ColumnInformation"/> can be fed to the AutoML API when running an experiment.
+            See <typeref cref="M:Microsoft.ML.AutoML.ExperimentBase`2.Execute(Microsoft.ML.IDataView,Microsoft.ML.AutoML.ColumnInformation,Microsoft.ML.IEstimator{Microsoft.ML.ITransformer},System.IProgress{Microsoft.ML.AutoML.RunDetail{`0}})" />
+            for example.</para>
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.ColumnInformation.LabelColumnName">
+            <summary>
+            The dataset column to use as the label.
+            </summary>
+            <value>The default value is "Label".</value>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.ColumnInformation.UserIdColumnName">
+            <summary>
+            The dataset column to use as a user ID for computation.
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.ColumnInformation.ItemIdColumnName">
+            <summary>
+            The dataset column to use as a item ID for computation.
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.ColumnInformation.ExampleWeightColumnName">
+            <summary>
+            The dataset column to use for example weight.
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.ColumnInformation.SamplingKeyColumnName">
+            <summary>
+            The dataset column to use for grouping rows.
+            If two examples share the same sampling key column name,
+            they are guaranteed to appear in the same subset (train or test).
+            This can be used to ensure no label leakage from the train to the test set.
+            If <see langword="null"/>, no row grouping will be performed.
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.ColumnInformation.CategoricalColumnNames">
+            <summary>
+            The dataset columns that are categorical.
+            </summary>
+            <value>The default value is a new, empty <see cref="T:System.Collections.ObjectModel.Collection`1"/>.</value>
+            <remarks>
+            Categorical data columns should generally be columns that contain a small number of unique values.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.ColumnInformation.NumericColumnNames">
+            <summary>
+            The dataset columns that are numeric.
+            </summary>
+            <value>The default value is a new, empty <see cref="T:System.Collections.ObjectModel.Collection`1"/>.</value>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.ColumnInformation.TextColumnNames">
+            <summary>
+            The dataset columns that are text.
+            </summary>
+            <value>The default value is a new, empty <see cref="T:System.Collections.ObjectModel.Collection`1"/>.</value>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.ColumnInformation.IgnoredColumnNames">
+            <summary>
+            The dataset columns that AutoML should ignore.
+            </summary>
+            <value>The default value is a new, empty <see cref="T:System.Collections.ObjectModel.Collection`1"/>.</value>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.ColumnInformation.ImagePathColumnNames">
+            <summary>
+            The dataset columns that are image paths.
+            </summary>
+            <value>The default value is a new, empty <see cref="T:System.Collections.ObjectModel.Collection`1"/>.</value>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.ExperimentBase`2">
+            <summary>
+            AutoML experiment base class. All task-specific AutoML experiments
+            (like <see cref="T:Microsoft.ML.AutoML.BinaryClassificationExperiment"/>) inherit from this class.
+            </summary>
+            <typeparam name="TMetrics">Metrics type used by task-specific AutoML experiments.</typeparam>
+            <typeparam name="TExperimentSettings">Experiment settings type.</typeparam>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.ExperimentBase`2.Execute(Microsoft.ML.IDataView,System.String,System.String,Microsoft.ML.IEstimator{Microsoft.ML.ITransformer},System.IProgress{Microsoft.ML.AutoML.RunDetail{`0}})">
+            <summary>
+            Executes an AutoML experiment.
+            </summary>
+            <param name="trainData">The training data used by the AutoML experiment.</param>
+            <param name="labelColumnName">The dataset column used as the label.</param>
+            <param name="samplingKeyColumn">The dataset column used as the sampling key column.
+            See <see cref="P:Microsoft.ML.AutoML.ColumnInformation.SamplingKeyColumnName"/> for more information.</param>
+            <param name="preFeaturizer">Pre-featurizer that AutoML will apply to the data during an
+            experiment. (The pre-featurizer will be fit only on the training data split to produce a
+            trained transform. Then, the trained transform will be applied to both the training
+            data split and corresponding validation data split.)</param>
+            <param name="progressHandler">A user-defined object that implements
+            the <see cref="T:System.IProgress`1"/> interface. AutoML will invoke the method
+            <see cref="M:System.IProgress`1.Report(`0)"/> after each model it produces during the
+            course of the experiment.
+            </param>
+            <returns>The experiment result.</returns>
+            <remarks>
+            Depending on the size of your data, the AutoML experiment could take a long time to execute.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.ExperimentBase`2.Execute(Microsoft.ML.IDataView,Microsoft.ML.AutoML.ColumnInformation,Microsoft.ML.IEstimator{Microsoft.ML.ITransformer},System.IProgress{Microsoft.ML.AutoML.RunDetail{`0}})">
+            <summary>
+            Executes an AutoML experiment.
+            </summary>
+            <param name="trainData">The training data to be used by the AutoML experiment.</param>
+            <param name="columnInformation">Column information for the dataset.</param>
+            <param name="preFeaturizer">Pre-featurizer that AutoML will apply to the data during an
+            experiment. (The pre-featurizer will be fit only on the training data split to produce a
+            trained transform. Then, the trained transform will be applied to both the training
+            data split and corresponding validation data split.)</param>
+            <param name="progressHandler">A user-defined object that implements
+            the <see cref="T:System.IProgress`1"/> interface. AutoML will invoke the method
+            <see cref="M:System.IProgress`1.Report(`0)"/> after each model it produces during the
+            course of the experiment.
+            </param>
+            <returns>The experiment result.</returns>
+            <remarks>
+            Depending on the size of your data, the AutoML experiment could take a long time to execute.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.ExperimentBase`2.Execute(Microsoft.ML.IDataView,Microsoft.ML.IDataView,System.String,Microsoft.ML.IEstimator{Microsoft.ML.ITransformer},System.IProgress{Microsoft.ML.AutoML.RunDetail{`0}})">
+            <summary>
+            Executes an AutoML experiment.
+            </summary>
+            <param name="trainData">The training data to be used by the AutoML experiment.</param>
+            <param name="validationData">The validation data to be used by the AutoML experiment.</param>
+            <param name="labelColumnName">The name of the label column.</param>
+            <param name="preFeaturizer">Pre-featurizer that AutoML will apply to the data during an
+            experiment. (The pre-featurizer will be fit only on the training data split to produce a
+            trained transform. Then, the trained transform will be applied to both the training
+            data split and corresponding validation data split.)</param>
+            <param name="progressHandler">A user-defined object that implements
+            the <see cref="T:System.IProgress`1"/> interface. AutoML will invoke the method
+            <see cref="M:System.IProgress`1.Report(`0)"/> after each model it produces during the
+            course of the experiment.
+            </param>
+            <returns>The experiment result.</returns>
+            <remarks>
+            Depending on the size of your data, the AutoML experiment could take a long time to execute.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.ExperimentBase`2.Execute(Microsoft.ML.IDataView,Microsoft.ML.IDataView,Microsoft.ML.AutoML.ColumnInformation,Microsoft.ML.IEstimator{Microsoft.ML.ITransformer},System.IProgress{Microsoft.ML.AutoML.RunDetail{`0}})">
+            <summary>
+            Executes an AutoML experiment.
+            </summary>
+            <param name="trainData">The training data to be used by the AutoML experiment.</param>
+            <param name="validationData">The validation data to be used by the AutoML experiment.</param>
+            <param name="columnInformation">Column information for the dataset.</param>
+            <param name="preFeaturizer">Pre-featurizer that AutoML will apply to the data during an
+            experiment. (The pre-featurizer will be fit only on the training data split to produce a
+            trained transform. Then, the trained transform will be applied to both the training
+            data split and corresponding validation data split.)</param>
+            <param name="progressHandler">A user-defined object that implements
+            the <see cref="T:System.IProgress`1"/> interface. AutoML will invoke the method
+            <see cref="M:System.IProgress`1.Report(`0)"/> after each model it produces during the
+            course of the experiment.
+            </param>
+            <returns>The experiment result.</returns>
+            <remarks>
+            Depending on the size of your data, the AutoML experiment could take a long time to execute.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.ExperimentBase`2.Execute(Microsoft.ML.IDataView,System.UInt32,Microsoft.ML.AutoML.ColumnInformation,Microsoft.ML.IEstimator{Microsoft.ML.ITransformer},System.IProgress{Microsoft.ML.AutoML.CrossValidationRunDetail{`0}})">
+            <summary>
+            Executes an AutoML experiment.
+            </summary>
+            <param name="trainData">The training data to be used by the AutoML experiment.</param>
+            <param name="numberOfCVFolds">The number of cross validation folds into which the training data should be divided when fitting a model.</param>
+            <param name="columnInformation">Column information for the dataset.</param>
+            <param name="preFeaturizer">Pre-featurizer that AutoML will apply to the data during an
+            experiment. (The pre-featurizer will be fit only on the training data split to produce a
+            trained transform. Then, the trained transform will be applied to both the training
+            data split and corresponding validation data split.)</param>
+            <param name="progressHandler">A user-defined object that implements
+            the <see cref="T:System.IProgress`1"/> interface. AutoML will invoke the method
+            <see cref="M:System.IProgress`1.Report(`0)"/> after each model it produces during the
+            course of the experiment.
+            </param>
+            <returns>The cross validation experiment result.</returns>
+            <remarks>
+            Depending on the size of your data, the AutoML experiment could take a long time to execute.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.ExperimentBase`2.Execute(Microsoft.ML.IDataView,System.UInt32,System.String,System.String,Microsoft.ML.IEstimator{Microsoft.ML.ITransformer},System.Progress{Microsoft.ML.AutoML.CrossValidationRunDetail{`0}})">
+            <summary>
+            Executes an AutoML experiment.
+            </summary>
+            <param name="trainData">The training data to be used by the AutoML experiment.</param>
+            <param name="numberOfCVFolds">The number of cross validation folds into which the training data should be divided when fitting a model.</param>
+            <param name="labelColumnName">The name of the label column.</param>
+            <param name="samplingKeyColumn">The name of the sampling key column.</param>
+            <param name="preFeaturizer">Pre-featurizer that AutoML will apply to the data during an
+            experiment. (The pre-featurizer will be fit only on the training data split to produce a
+            trained transform. Then, the trained transform will be applied to both the training
+            data split and corresponding validation data split.)</param>
+            <param name="progressHandler">A user-defined object that implements
+            the <see cref="T:System.IProgress`1"/> interface. AutoML will invoke the method
+            <see cref="M:System.IProgress`1.Report(`0)"/> after each model it produces during the
+            course of the experiment.
+            </param>
+            <returns>The cross validation experiment result.</returns>
+            <remarks>
+            Depending on the size of your data, the AutoML experiment could take a long time to execute.
+            </remarks>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.CrossValidationExperimentResult`1">
+            <summary>
+            Result of an AutoML experiment that includes cross validation details.
+            </summary>
+            <typeparam name="TMetrics">Metrics type for the experiment (like <see cref="T:Microsoft.ML.Data.BinaryClassificationMetrics"/>).</typeparam>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.CrossValidationExperimentResult`1.RunDetails">
+            <summary>
+            Details of the cross validation runs in this experiment.
+            </summary>
+            <remarks>
+            See <see cref="T:Microsoft.ML.AutoML.CrossValidationRunDetail`1"/> for more information.
+            </remarks>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.CrossValidationExperimentResult`1.BestRun">
+            <summary>
+            Best run in this experiment.
+            </summary>
+            <remarks>
+            AutoML considers the optimizing metric (like <see cref="P:Microsoft.ML.AutoML.BinaryExperimentSettings.OptimizingMetric"/>)
+            when determining the best run.
+            </remarks>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.ExperimentResult`1">
+            <summary>
+            Result of an AutoML experiment.
+            </summary>
+            <typeparam name="TMetrics">Metrics type for the experiment (like <see cref="T:Microsoft.ML.Data.BinaryClassificationMetrics"/>).</typeparam>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.ExperimentResult`1.RunDetails">
+            <summary>
+            Details of the runs in this experiment.
+            </summary>
+            <remarks>
+            See <see cref="T:Microsoft.ML.AutoML.RunDetail`1"/> for more information.
+            </remarks>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.ExperimentResult`1.BestRun">
+            <summary>
+            Best run in this experiment.
+            </summary>
+            <remarks>
+            AutoML considers the optimizing metric (like <see cref="P:Microsoft.ML.AutoML.BinaryExperimentSettings.OptimizingMetric"/>)
+            when determining the best run.
+            </remarks>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.ExperimentSettings">
+            <summary>
+            Base class for experiment settings. All task-specific AutoML experiment settings
+            (like <see cref="T:Microsoft.ML.AutoML.BinaryExperimentSettings"/>) inherit from this class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.ExperimentSettings.MaxExperimentTimeInSeconds">
+            <summary>
+            Maximum time in seconds the experiment is allowed to run.
+            </summary>
+            <value>The default value is 86,400, the number of seconds in one day.</value>
+            <remarks>
+            An experiment may run for longer than <see name="MaxExperimentTimeInSeconds"/>.
+            This is because once AutoML starts training an ML.NET model, AutoML lets the
+            model train to completion. For instance, if the first model
+            AutoML trains takes 4 hours, and the second model trained takes 5 hours,
+            but <see name="MaxExperimentTimeInSeconds"/> was the number of seconds in 6 hours,
+            the experiment will run for 4 + 5 = 9 hours (not 6 hours).
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.ExperimentSettings.CancellationToken">
+            <summary>
+            Cancellation token for the AutoML experiment. It propagates the notification
+            that the experiment should be canceled.
+            </summary>
+            <remarks>
+            An experiment may not immediately stop after cancellation.
+            This is because once AutoML starts training an ML.NET model, AutoML lets the
+            model train to completion. For instance, if the first model
+            AutoML trains takes 4 hours, and the second model trained takes 5 hours,
+            but cancellation is requested after 6 hours,
+            the experiment will stop after 4 + 5 = 9 hours (not 6 hours).
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.ExperimentSettings.CacheDirectory">
+            <summary>
+            This is a pointer to a directory where all models trained during the AutoML experiment will be saved.
+            If <see langword="null"/>, models will be kept in memory instead of written to disk.
+            (Please note: for an experiment with high runtime operating on a large dataset, opting to keep models in
+            memory could cause a system to run out of memory.)
+            </summary>
+            <value>The default value is the directory named "Microsoft.ML.AutoML" in the current user's temporary folder.</value>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.ExperimentSettings.CacheBeforeTrainer">
+            <summary>
+            Whether AutoML should cache before ML.NET trainers.
+            See <see cref="P:Microsoft.ML.TrainerInfo.WantCaching"/> for more information on caching.
+            </summary>
+            <value>The default value is <see cref="F:Microsoft.ML.AutoML.CacheBeforeTrainer.Auto"/>.</value>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.ExperimentSettings.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:Microsoft.ML.AutoML.ExperimentSettings"/>.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.CacheBeforeTrainer">
+            <summary>
+            Whether AutoML should cache before ML.NET trainers.
+            See <see cref="P:Microsoft.ML.TrainerInfo.WantCaching"/> for more information on caching.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.CacheBeforeTrainer.Auto">
+            <summary>
+            Dynamically determine whether to cache before each trainer.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.CacheBeforeTrainer.On">
+            <summary>
+            Always force caching on.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.CacheBeforeTrainer.Off">
+            <summary>
+            Always force caching off.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.InferenceExceptionType">
+            <summary>
+            Type of exception encountered by AutoML.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.InferenceExceptionType.ColumnDataType">
+            <summary>
+            Exception that occurs when AutoML is inferring the data type of a column.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.InferenceExceptionType.ColumnSplit">
+            <summary>
+            Exception that occurs when AutoML is attempting to split a dataset into distinct columns.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.InferenceException">
+            <summary>
+            Exception thrown by AutoML.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.InferenceException.InferenceExceptionType">
+            <summary>
+            Type of AutoML exception that occurred.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.MLContextExtension">
+            <summary>
+            Class containing AutoML extension methods to <see cref="T:Microsoft.ML.MLContext"/>
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.MLContextExtension.Auto(Microsoft.ML.MLContext)">
+            <summary>
+            Returns a catalog of all possible AutoML operations.
+            </summary>
+            <param name="mlContext"><see cref="T:Microsoft.ML.MLContext"/> instance.</param>
+            <returns>A catalog of all possible AutoML operations.</returns>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.MulticlassExperimentSettings">
+            <summary>
+            Settings for AutoML experiments on multiclass classification datasets.
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.MulticlassExperimentSettings.OptimizingMetric">
+            <summary>
+            Metric that AutoML will try to optimize over the course of the experiment.
+            </summary>
+            <value>The default value is <see cref="F:Microsoft.ML.AutoML.MulticlassClassificationMetric.MicroAccuracy"/>.</value>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.MulticlassExperimentSettings.Trainers">
+            <summary>
+            Collection of trainers the AutoML experiment can leverage.
+            </summary>
+            <value>
+            The default value is a collection auto-populated with all possible trainers (all values of <see cref="T:Microsoft.ML.AutoML.MulticlassClassificationTrainer" />).
+            </value>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.MulticlassExperimentSettings.#ctor">
+            <summary>
+            Initializes a new instances of <see cref="T:Microsoft.ML.AutoML.MulticlassExperimentSettings"/>.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.MulticlassClassificationMetric">
+            <summary>
+            Multiclass classification metric that AutoML will aim to optimize in its sweeping process during an experiment.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.MulticlassClassificationMetric.MicroAccuracy">
+            <summary>
+            See <see cref="P:Microsoft.ML.Data.MulticlassClassificationMetrics.MicroAccuracy"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.MulticlassClassificationMetric.MacroAccuracy">
+            <summary>
+            See <see cref="P:Microsoft.ML.Data.MulticlassClassificationMetrics.MacroAccuracy"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.MulticlassClassificationMetric.LogLoss">
+            <summary>
+            See <see cref="P:Microsoft.ML.Data.MulticlassClassificationMetrics.LogLoss"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.MulticlassClassificationMetric.LogLossReduction">
+            <summary>
+            See <see cref="P:Microsoft.ML.Data.MulticlassClassificationMetrics.LogLossReduction"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.MulticlassClassificationMetric.TopKAccuracy">
+            <summary>
+            See <see cref="P:Microsoft.ML.Data.MulticlassClassificationMetrics.TopKAccuracy"/>.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.MulticlassClassificationTrainer">
+            <summary>
+            Enumeration of ML.NET multiclass classification trainers used by AutoML.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.MulticlassClassificationTrainer.AveragedPerceptronOva">
+            <summary>
+            <see cref="T:Microsoft.ML.Trainers.OneVersusAllTrainer"/> using <see cref="T:Microsoft.ML.Trainers.AveragedPerceptronTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.MulticlassClassificationTrainer.FastForestOva">
+            <summary>
+            <see cref="T:Microsoft.ML.Trainers.OneVersusAllTrainer"/> using <see cref="T:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.MulticlassClassificationTrainer.FastTreeOva">
+            <summary>
+            <see cref="T:Microsoft.ML.Trainers.OneVersusAllTrainer"/> using <see cref="T:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.MulticlassClassificationTrainer.LightGbm">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.LightGbm.LightGbmMulticlassTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.MulticlassClassificationTrainer.LinearSupportVectorMachinesOva">
+            <summary>
+            <see cref="T:Microsoft.ML.Trainers.OneVersusAllTrainer"/> using <see cref="T:Microsoft.ML.Trainers.LinearSvmTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.MulticlassClassificationTrainer.LbfgsMaximumEntropy">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.LbfgsMaximumEntropyMulticlassTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.MulticlassClassificationTrainer.LbfgsLogisticRegressionOva">
+            <summary>
+            <see cref="T:Microsoft.ML.Trainers.OneVersusAllTrainer"/> using <see cref="T:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.MulticlassClassificationTrainer.SdcaMaximumEntropy">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.SdcaMaximumEntropyMulticlassTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.MulticlassClassificationTrainer.SgdCalibratedOva">
+            <summary>
+            <see cref="T:Microsoft.ML.Trainers.OneVersusAllTrainer"/> using <see cref="T:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.MulticlassClassificationTrainer.SymbolicSgdLogisticRegressionOva">
+            <summary>
+            <see cref="T:Microsoft.ML.Trainers.OneVersusAllTrainer"/> using <see cref="T:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer"/>.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.MulticlassClassificationExperiment">
+            <summary>
+            AutoML experiment on multiclass classification datasets.
+            </summary>
+            <example>
+            <format type="text/markdown">
+            <![CDATA[
+             [!code-csharp[MulticlassClassificationExperiment](~/../docs/samples/docs/samples/Microsoft.ML.AutoML.Samples/MulticlassClassificationExperiment.cs)]
+            ]]></format>
+            </example>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.PipelineScore.RunSucceded">
+            <summary>
+            This setting is true if the pipeline run succeeded and ran to completion.
+            Else, it is false if some exception was thrown before the run could complete.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.RecommendationExperimentSettings">
+            <summary>
+            Settings for AutoML experiments on recommendation datasets.
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.RecommendationExperimentSettings.OptimizingMetric">
+            <summary>
+            Metric that AutoML will try to optimize over the course of the experiment.
+            </summary>
+            <value>The default value is <see cref="F:Microsoft.ML.AutoML.RegressionMetric.RSquared"/>.</value>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.RecommendationExperimentSettings.Trainers">
+            <summary>
+            Collection of trainers the AutoML experiment can leverage.
+            </summary>
+            <value>The default value is a collection auto-populated with all possible trainers (all values of <see cref="T:Microsoft.ML.AutoML.RecommendationTrainer" />).</value>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.RecommendationExperimentSettings.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:Microsoft.ML.AutoML.RecommendationExperimentSettings"/>.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.RecommendationTrainer">
+            <summary>
+            Enumeration of ML.NET recommendation trainers used by AutoML.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.RecommendationExperiment">
+            <summary>
+            AutoML experiment on recommendation datasets.
+            </summary>
+            <example>
+            <format type="text/markdown">
+            <![CDATA[
+             [!code-csharp[RecommendationExperiment](~/../docs/samples/docs/samples/Microsoft.ML.AutoML.Samples/RecommendationExperiment.cs)]
+            ]]></format>
+            </example>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.RegressionExperimentSettings">
+            <summary>
+            Settings for AutoML experiments on regression datasets.
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.RegressionExperimentSettings.OptimizingMetric">
+            <summary>
+            Metric that AutoML will try to optimize over the course of the experiment.
+            </summary>
+            <value>The default value is <see cref="F:Microsoft.ML.AutoML.RegressionMetric.RSquared" />.</value>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.RegressionExperimentSettings.Trainers">
+            <summary>
+            Collection of trainers the AutoML experiment can leverage.
+            </summary>
+            <value>
+            The default value is a collection auto-populated with all possible trainers (all values of <see cref="T:Microsoft.ML.AutoML.RegressionTrainer" />).
+            </value>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.RegressionMetric">
+            <summary>
+            Regression metric that AutoML will aim to optimize in its sweeping process during an experiment.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.RegressionMetric.MeanAbsoluteError">
+            <summary>
+            See <see cref="P:Microsoft.ML.Data.RegressionMetrics.MeanAbsoluteError"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.RegressionMetric.MeanSquaredError">
+            <summary>
+            See <see cref="P:Microsoft.ML.Data.RegressionMetrics.MeanSquaredError"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.RegressionMetric.RootMeanSquaredError">
+            <summary>
+            See <see cref="P:Microsoft.ML.Data.RegressionMetrics.RootMeanSquaredError"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.RegressionMetric.RSquared">
+            <summary>
+            See <see cref="P:Microsoft.ML.Data.RegressionMetrics.RSquared"/>.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.RegressionTrainer">
+            <summary>
+            Enumeration of ML.NET multiclass classification trainers used by AutoML.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.RegressionTrainer.FastForest">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.FastTree.FastForestRegressionTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.RegressionTrainer.FastTree">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.RegressionTrainer.FastTreeTweedie">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.FastTree.FastTreeTweedieTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.RegressionTrainer.LightGbm">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.LightGbm.LightGbmRegressionTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.RegressionTrainer.OnlineGradientDescent">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.OnlineGradientDescentTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.RegressionTrainer.Ols">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.OlsTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.RegressionTrainer.LbfgsPoissonRegression">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.LbfgsPoissonRegressionTrainer"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.RegressionTrainer.StochasticDualCoordinateAscent">
+            <summary>
+            See <see cref="T:Microsoft.ML.Trainers.SdcaRegressionTrainer"/>.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.RegressionExperiment">
+            <summary>
+            AutoML experiment on regression classification datasets.
+            </summary>
+            <example>
+            <format type="text/markdown">
+            <![CDATA[
+             [!code-csharp[RegressionExperiment](~/../docs/samples/docs/samples/Microsoft.ML.AutoML.Samples/RegressionExperiment.cs)]
+            ]]></format>
+            </example>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.RegressionExperimentResultExtensions">
+            <summary>
+            Extension methods that operate over regression experiment run results.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.RegressionExperimentResultExtensions.Best(System.Collections.Generic.IEnumerable{Microsoft.ML.AutoML.RunDetail{Microsoft.ML.Data.RegressionMetrics}},Microsoft.ML.AutoML.RegressionMetric)">
+            <summary>
+            Select the best run from an enumeration of experiment runs.
+            </summary>
+            <param name="results">Enumeration of AutoML experiment run results.</param>
+            <param name="metric">Metric to consider when selecting the best run.</param>
+            <returns>The best experiment run.</returns>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.RegressionExperimentResultExtensions.Best(System.Collections.Generic.IEnumerable{Microsoft.ML.AutoML.CrossValidationRunDetail{Microsoft.ML.Data.RegressionMetrics}},Microsoft.ML.AutoML.RegressionMetric)">
+            <summary>
+            Select the best run from an enumeration of experiment cross validation runs.
+            </summary>
+            <param name="results">Enumeration of AutoML experiment cross validation run results.</param>
+            <param name="metric">Metric to consider when selecting the best run.</param>
+            <returns>The best experiment run.</returns>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.CrossValidationRunDetail`1">
+            <summary>
+            Details about a cross validation run in an AutoML experiment.
+            </summary>
+            <typeparam name="TMetrics">Metrics type for the run.</typeparam>
+            <remarks>
+            Over the course of an experiment, many models are evaluated on a dataset
+            using cross validation. This object contains information about each model
+            evaluated during the AutoML experiment.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.CrossValidationRunDetail`1.Results">
+            <summary>
+            Results for each of the cross validation folds.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.TrainResult`1">
+            <summary>
+            Result of a pipeline trained on a cross validation fold.
+            </summary>
+            <typeparam name="TMetrics">Metrics type for the run.</typeparam>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.TrainResult`1.ValidationMetrics">
+            <summary>
+            Each fold has training data and validation data. A model trained on the
+            folds's training data is evaluated against the validation data,
+            and the metrics for that calculation are emitted here.
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.TrainResult`1.Model">
+            <summary>
+            Model trained on the fold during the run.
+            </summary>
+            <remarks>
+            You can use the trained model to obtain predictions on input data.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.TrainResult`1.Exception">
+            <summary>
+            Exception encountered while training the fold. This property is
+            <see langword="null"/> if no exception was encountered.
+            </summary>
+            <remarks>
+            If an exception occurred, it's possible some properties in ths object
+            (like <see cref="P:Microsoft.ML.AutoML.TrainResult`1.Model"/>) could be <see langword="null"/>.
+            </remarks>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.RunDetail`1">
+            <summary>
+            Details about an AutoML experiment run.
+            </summary>
+            <remarks>
+            Over the course of an experiment, many models are evaluated on a dataset.
+            This object contains information about each model evaluated during
+            the AutoML experiment.
+            </remarks>
+            <typeparam name="TMetrics">Metrics type for the experiment (like <see cref="T:Microsoft.ML.Data.BinaryClassificationMetrics"/>).</typeparam>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.RunDetail`1.ValidationMetrics">
+            <summary>
+            Metrics of how the trained model performed on the validation data during
+            the run.
+            </summary>
+            <remarks>
+            Internally, each run has train data and validation data. Model trained on the
+            run's training is evaluated against the validation data,
+            and the metrics for that calculation are emitted here.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.RunDetail`1.Model">
+            <summary>
+            Model trained during the run.
+            </summary>
+            <remarks>
+            You can use the trained model to obtain predictions on input data.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.RunDetail`1.Exception">
+            <summary>
+            Exception encountered during the run. This property is <see langword="null"/> if
+            no exception was encountered.
+            </summary>
+            <remarks>
+            If an exception occurred, it's possible some properties in ths object
+            (like <see cref="P:Microsoft.ML.AutoML.RunDetail`1.Model"/>) could be <see langword="null"/>.
+            </remarks>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.RunDetail">
+            <summary>
+            Details about an AutoML experiment run.
+            </summary>
+            <remarks>
+            In trying to produce the best model, an AutoML experiment evaluates the quality of many models
+            on a dataset. This object contains information about each model tried during the AutoML experiment.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.RunDetail.TrainerName">
+            <summary>
+            String name of the trainer used in this run. (For instance, <c>"LightGbm"</c>.)
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.RunDetail.RuntimeInSeconds">
+            <summary>
+            Runtime in seconds.
+            </summary>
+            <remarks>
+            Runtime includes model training time. Depending on the size of the data,
+            the runtime may be quite long.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.RunDetail.Estimator">
+            <summary>
+            An ML.NET <see cref="T:Microsoft.ML.IEstimator`1"/> that represents the pipeline in this run.
+            </summary>
+            <remarks>
+            You can call <see cref="M:Microsoft.ML.IEstimator`1.Fit(Microsoft.ML.IDataView)" /> on
+            this estimator to re-train your pipeline on any <see cref="T:Microsoft.ML.IEstimator`1" />.
+            </remarks>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.ColumnGroupingInference">
+            <summary>
+            This class incapsulates logic for grouping together the inferred columns of the text file based on their type
+            and purpose, and generating column names.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.ColumnGroupingInference.GroupingColumn">
+            <summary>
+            This is effectively a merger of <see cref="T:Microsoft.ML.AutoML.PurposeInference.Column"/> and a <see cref="T:Microsoft.ML.AutoML.ColumnTypeInference.Column"/>
+            with support for vector-value columns.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.ColumnGroupingInference.InferGroupingAndNames(Microsoft.ML.MLContext,System.Boolean,Microsoft.ML.AutoML.ColumnTypeInference.Column[],Microsoft.ML.AutoML.PurposeInference.Column[])">
+            <summary>
+            Group together the single-valued columns with the same type and purpose and generate column names.
+            </summary>
+            <param name="env">The host environment to use.</param>
+            <param name="hasHeader">Whether the original file had a header.
+            If yes, the <see cref="F:Microsoft.ML.AutoML.ColumnTypeInference.Column.SuggestedName"/> fields are used to generate the column
+            names, otherwise they are ignored.</param>
+            <param name="types">The (detected) column types.</param>
+            <param name="purposes">The (detected) column purposes. Must be parallel to <paramref name="types"/>.</param>
+            <returns>The struct containing an array of grouped columns specifications.</returns>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.ColumnGroupingInference.GetRanges(System.Int32[])">
+            <summary>
+            Generates a collection of Ranges from indices.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.ColumnInferenceValidationUtil.ValidateSpecifiedColumnsExist(Microsoft.ML.AutoML.ColumnInformation,Microsoft.ML.IDataView)">
+            <summary>
+            Validate all columns specified in column info exist in inferred data view.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.ColumnInformationUtil.GetColumnNames(Microsoft.ML.AutoML.ColumnInformation)">
+            <summary>
+            Get all column names that are in <paramref name="columnInformation"/>.
+            </summary>
+            <param name="columnInformation">Column information.</param>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.ColumnTypeInference">
+            <summary>
+            This class incapsulates logic for automatic inference of column types for the text file.
+            It also attempts to guess whether there is a header row.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.ColumnTypeInference.Experts">
+            <summary>
+            Current design is as follows: there's a sequence of 'experts' that each look at all the columns.
+            Every expert may or may not assign the 'answer' (suggested type) to a column. If the expert needs
+            some information about the column (for example, the column values), this information is lazily calculated
+            by the column object, not the expert itself, to allow the reuse of the same information by another
+            expert.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.ColumnTypeInference.InferTextFileColumnTypes(Microsoft.ML.MLContext,Microsoft.ML.Data.IMultiStreamSource,Microsoft.ML.AutoML.ColumnTypeInference.Arguments)">
+            <summary>
+            Auto-detect column types of the file.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.PurposeInference">
+            <summary>
+            Automatic inference of column purposes for the data view.
+            This is used in the context of text import wizard, but can be used outside as well.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.PurposeInference.IPurposeInferenceExpert">
+            <summary>
+            The design is the same as for <see cref="T:Microsoft.ML.AutoML.ColumnTypeInference"/>: there's a sequence of 'experts'
+            that each look at all the columns. Every expert may or may not assign the 'answer' (suggested purpose)
+            to a column. If the expert needs some information about the column (for example, the column values),
+            this information is lazily calculated by the column object, not the expert itself, to allow the reuse
+            of the same information by another expert.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.PurposeInference.InferPurposes(Microsoft.ML.MLContext,Microsoft.ML.IDataView,Microsoft.ML.AutoML.ColumnInformation)">
+            <summary>
+            Auto-detect purpose for the data view columns.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.TextFileContents">
+            <summary>
+            Utilities for various heuristics against text files.
+            Currently, separator inference and column count detection.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.TextFileContents.TrySplitColumns(Microsoft.ML.MLContext,Microsoft.ML.Data.IMultiStreamSource,System.Char[])">
+            <summary>
+            Attempt to detect text loader arguments.
+            The algorithm selects the first 'acceptable' set: the one that recognizes the same number of columns in at
+            least <see cref="F:Microsoft.ML.AutoML.TextFileContents.UniformColumnCountThreshold"/> of the sample's lines,
+            and this number of columns is more than 1.
+            We sweep on separator, allow sparse and allow quote parameter.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.TextFileSample">
+            <summary>
+            This class holds an in-memory sample of the text file, and serves as an <see cref="T:Microsoft.ML.Data.IMultiStreamSource"/> proxy to it.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.TextFileSample.CreateFromFullStream(System.IO.Stream)">
+            <summary>
+            Create a <see cref="T:Microsoft.ML.AutoML.TextFileSample"/> by reading multiple chunks from the file (or other source) and
+            then stitching them together. The algorithm is as follows:
+            0. If the source is not seekable, revert to <see cref="M:Microsoft.ML.AutoML.TextFileSample.CreateFromHead(System.IO.Stream)"/>.
+            1. If the file length is less than 2 * <see cref="F:Microsoft.ML.AutoML.TextFileSample.BufferSizeMb"/>, revert to <see cref="M:Microsoft.ML.AutoML.TextFileSample.CreateFromHead(System.IO.Stream)"/>.
+            2. Read first <see cref="F:Microsoft.ML.AutoML.TextFileSample.FirstChunkSizeMb"/> MB chunk. Determine average line length in the chunk.
+            3. Determine how large one chunk should be, and how many chunks there should be, to end up
+            with <see cref="F:Microsoft.ML.AutoML.TextFileSample.BufferSizeMb"/> * <see cref="F:Microsoft.ML.AutoML.TextFileSample.OversamplingRate"/> MB worth of lines.
+            4. Determine seek locations and read the chunks.
+            5. Stitch and return a <see cref="T:Microsoft.ML.AutoML.TextFileSample"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.TextFileSample.CreateFromHead(System.IO.Stream)">
+            <summary>
+            Create a <see cref="T:Microsoft.ML.AutoML.TextFileSample"/> by reading one chunk from the beginning.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.TextFileSample.StitchChunks(System.Boolean,System.Byte[][])">
+            <summary>
+            Given an array of chunks of the text file, of which the first chunk is the head,
+            this method trims incomplete lines from the beginning and end of each chunk
+            (except that it doesn't trim the beginning of the first chunk and end of last chunk if we read whole file),
+            then joins the rest together to form a final byte buffer and returns a <see cref="T:Microsoft.ML.AutoML.TextFileSample"/>
+            wrapped around it.
+            </summary>
+            <param name="wholeFile">did we read whole file</param>
+            <param name="chunks">chunks of data</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.TextFileSample.IsEncodingOkForSampling(System.Byte[])">
+            <summary>
+            Detect whether we can auto-detect EOL characters without parsing.
+            If we do, we can cheaply sample from different file locations and trim the partial strings.
+            The encodings that pass the test are UTF8 and all single-byte encodings.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.RecipeInference.AllowedTrainers(Microsoft.ML.MLContext,Microsoft.ML.AutoML.TaskKind,Microsoft.ML.AutoML.ColumnInformation,System.Collections.Generic.IEnumerable{Microsoft.ML.AutoML.TrainerName})">
+            <summary>
+            Given a predictor type, return a set of all permissible trainers (with their sweeper params, if defined).
+            </summary>
+            <returns>Array of viable learners.</returns>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.SuggestedPipeline">
+            <summary>
+            A runnable pipeline. Contains a learner and set of transforms,
+            along with a RunSummary if it has already been exectued.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.SuggestedTrainer.PropagateParamSetValues">
+            <summary>
+            make sure sweep params and param set are consistent
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.PipelineSuggester.GetTopTrainers(System.Collections.Generic.IEnumerable{Microsoft.ML.AutoML.SuggestedPipelineRunDetail},System.Collections.Generic.IEnumerable{Microsoft.ML.AutoML.SuggestedTrainer},System.Boolean)">
+            <summary>
+            Get top trainers from first stage
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.PipelineSuggester.SampleHyperparameters(Microsoft.ML.MLContext,Microsoft.ML.AutoML.SuggestedTrainer,System.Collections.Generic.IEnumerable{Microsoft.ML.AutoML.SuggestedPipelineRunDetail},System.Boolean)">
+            <summary>
+            Samples new hyperparameters for the trainer, and sets them.
+            Returns true if success (new hyperparams were suggested and set). Else, returns false.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.ISweeper">
+            <summary>
+            The main interface of the sweeper
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.ISweeper.ProposeSweeps(System.Int32,System.Collections.Generic.IEnumerable{Microsoft.ML.AutoML.IRunResult})">
+            <summary>
+            Returns between 0 and maxSweeps configurations to run.
+            It expects a list of previous runs such that it can generate configurations that were not already tried.
+            The list of runs can be null if there were no previous runs.
+            Some smart sweepers can take advantage of the metric(s) that the caller computes for previous runs.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.IValueGenerator">
+            <summary>
+            This is the interface that each type of parameter sweep needs to implement
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.IValueGenerator.CreateFromNormalized(System.Double)">
+            <summary>
+            Given a value in the [0,1] range, return a value for this parameter.
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.IValueGenerator.Item(System.Int32)">
+            <summary>
+            Used mainly in grid sweepers, return the i-th distinct value for this parameter
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.IValueGenerator.Count">
+            <summary>
+            Used mainly in grid sweepers, return the count of distinct values for this parameter
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.IValueGenerator.Name">
+            <summary>
+            Returns the name of the generated parameter
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.IParameterValue">
+            <summary>
+            Parameter value generated from the sweeping.
+            The parameter values must be immutable.
+            Value is converted to string because the runner will usually want to construct a command line for TL.
+            Implementations of this interface must also override object.GetHashCode() and object.Equals(object) so they are consistent
+            with IEquatable.Equals(IParameterValue).
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.IParameterValue`1">
+            <summary>
+            Type safe version of the IParameterValue interface.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.ParameterSet">
+            <summary>
+            A set of parameter values.
+            The parameter set must be immutable.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.IRunResult">
+            <summary>
+            The result of a run.
+            Contains the parameter set used, useful for the sweeper to not generate the same configuration multiple times.
+            Also contains the result of a run and the metric value that is used by smart sweepers to generate new configurations
+            that try to maximize this metric.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.RunResult">
+            <summary>
+            Simple implementation of IRunResult
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.RunResult.IsMetricMaximizing">
+            <summary>
+            This switch changes the behavior of the CompareTo function, switching the greater than / less than
+            behavior, depending on if it is set to True.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.RunMetric">
+            <summary>
+            The metric class, used by smart sweeping algorithms.
+            Ideally we would like to move towards the new IDataView/ISchematized, this is
+            just a simple view instead, and it is decoupled from RunResult so we can move
+            in that direction in the future.
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.AutoML.RunMetric.PrimaryMetric">
+            <summary>
+            The primary metric to optimize.
+            This metric is usually an aggregate value for the run, for example, AUC, accuracy etc.
+            By default, smart sweeping algorithms will maximize this metric.
+            If you want to minimize, either negate this value or change the option in the arguments of the sweeper constructor.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.RunMetric.GetMetricDistribution">
+            <summary>
+            The (optional) distribution of the metric.
+            This distribution can be a secondary measure of how good a run was, e.g per-fold AUC, per-fold accuracy, (sampled) per-instance log loss etc.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.LongValueGenerator">
+            <summary>
+            The integer type parameter sweep.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.FloatValueGenerator">
+            <summary>
+            The floating point type parameter sweep.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.DiscreteValueGenerator">
+            <summary>
+            The discrete parameter sweep.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.UniformRandomSweeper">
+            <summary>
+            Random sweeper, it generates random values for each of the parameters.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.SmacSweeper.GenerateCandidateConfigurations(System.Int32,System.Collections.Generic.IEnumerable{Microsoft.ML.AutoML.IRunResult},Microsoft.ML.Trainers.FastTree.FastForestRegressionModelParameters)">
+            <summary>
+            Generates a set of candidate configurations to sweep through, based on a combination of random and local
+            search, as outlined in Hutter et al - Sequential Model-Based Optimization for General Algorithm Conﬁguration.
+            Makes use of class private members which determine how many candidates are returned. This number will include
+            random configurations interleaved (per the paper), and thus will be double the specified value.
+            </summary>
+            <param name="numOfCandidates">Number of candidate solutions to return.</param>
+            <param name="previousRuns">History of previously evaluated points, with their emprical performance values.</param>
+            <param name="forest">Trained random forest ensemble. Used in evaluating the candidates.</param>
+            <returns>An array of ParamaterSets which are the candidate configurations to sweep.</returns>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.SmacSweeper.GreedyPlusRandomSearch(Microsoft.ML.AutoML.ParameterSet[],Microsoft.ML.Trainers.FastTree.FastForestRegressionModelParameters,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.ML.AutoML.IRunResult})">
+            <summary>
+            Does a mix of greedy local search around best performing parameter sets, while throwing random parameter sets into the mix.
+            </summary>
+            <param name="parents">Beginning locations for local greedy search.</param>
+            <param name="forest">Trained random forest, used later for evaluating parameters.</param>
+            <param name="numOfCandidates">Number of candidate configurations returned by the method (top K).</param>
+            <param name="previousRuns">Historical run results.</param>
+            <returns>Array of parameter sets, which will then be evaluated.</returns>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.SmacSweeper.LocalSearch(Microsoft.ML.AutoML.ParameterSet,Microsoft.ML.Trainers.FastTree.FastForestRegressionModelParameters,System.Double,System.Double,System.Boolean)">
+            <summary>
+            Performs a local one-mutation neighborhood greedy search.
+            </summary>
+            <param name="parent">Starting parameter set configuration.</param>
+            <param name="forest">Trained forest, for evaluation of points.</param>
+            <param name="bestVal">Best performance seen thus far.</param>
+            <param name="epsilon">Threshold for when to stop the local search.</param>
+            <param name="isMetricMaximizing">Whether SMAC should aim to maximize (vs minimize) metric.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.SmacSweeper.GetOneMutationNeighborhood(Microsoft.ML.AutoML.ParameterSet)">
+            <summary>
+            Computes a single-mutation neighborhood (one param at a time) for a given configuration. For
+            numeric parameters, samples K mutations (i.e., creates K neighbors based on that paramater).
+            </summary>
+            <param name="parent">Starting configuration.</param>
+            <returns>A set of configurations that each differ from parent in exactly one parameter.</returns>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.SmacSweeper.GetForestRegressionLeafValues(Microsoft.ML.Trainers.FastTree.FastForestRegressionModelParameters,Microsoft.ML.AutoML.ParameterSet[])">
+            <summary>
+            Goes through forest to extract the set of leaf values associated with filtering each configuration.
+            </summary>
+            <param name="forest">Trained forest predictor, used for filtering configs.</param>
+            <param name="configs">Parameter configurations.</param>
+            <returns>2D array where rows correspond to configurations, and columns to the predicted leaf values.</returns>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.SmacSweeper.ComputeForestStats(System.Double[][])">
+            <summary>
+            Computes the empirical means and standard deviations for trees in the forest for each configuration.
+            </summary>
+            <param name="leafValues">The sets of leaf values from which the means and standard deviations are computed.</param>
+            <returns>A 2D array with one row per set of tree values, and the columns being mean and stddev, respectively.</returns>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.SignatureSweeperFromParameterList">
+            <summary>
+            Signature for the GUI loaders of sweepers.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.SweeperBase">
+            <summary>
+            Base sweeper that ensures the suggestions are different from each other and from the previous runs.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.SweeperProbabilityUtils.NormalRVs(System.Int32,System.Double,System.Double)">
+            <summary>
+            Samples from a Gaussian Normal with mean mu and std dev sigma.
+            </summary>
+            <param name="numRVs">Number of samples</param>
+            <param name="mu">mean</param>
+            <param name="sigma">standard deviation</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.SweeperProbabilityUtils.BinarySearch(System.Double[],System.Double,System.Int32,System.Int32)">
+            <summary>
+            Simple binary search method for finding smallest index in array where value
+            meets or exceeds what you're looking for.
+            </summary>
+            <param name="a">Array to search</param>
+            <param name="u">Value to search for</param>
+            <param name="low">Left boundary of search</param>
+            <param name="high">Right boundary of search</param>
+            <returns></returns>
+        </member>
+        <member name="F:Microsoft.ML.AutoML.SweepableParams.AllHyperparameterNames">
+            <summary>
+            The names of every hyperparameter swept across all trainers.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.SweepableParams.GetAllSweepableParameterNames">
+            <summary>
+            Gets the name of every hyperparameter swept across all trainers.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.TrainerExtensionUtil.UpdateFields(System.Object,System.Collections.Generic.IEnumerable{Microsoft.ML.AutoML.SweepableParam})">
+            <summary>
+            Updates properties of object instance based on the values in sweepParams
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.TransformInference">
+             <summary>
+             Auto-generate set of transforms for the data view, given the purposes of specified columns.
+            
+             The design is the same as for <see cref="T:Microsoft.ML.AutoML.ColumnTypeInference"/>: there's a sequence of 'experts'
+             that each look at all the columns. Every expert may or may not suggest additional transforms.
+             If the expert needs some information about the column (for example, the column values),
+             this information is lazily calculated by the column object, not the expert itself, to allow the reuse
+             of the same information by another expert.
+             </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.TransformInference.InferTransforms(Microsoft.ML.MLContext,Microsoft.ML.AutoML.TaskKind,Microsoft.ML.AutoML.DatasetColumnInfo[])">
+            <summary>
+            Automatically infer transforms for the data view
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.TransformInference.BuildFinalFeaturesConcatTransform(Microsoft.ML.MLContext,System.Collections.Generic.IEnumerable{Microsoft.ML.AutoML.SuggestedTransform},System.Collections.Generic.IEnumerable{Microsoft.ML.AutoML.TransformInference.IntermediateColumn})">
+            <summary>
+            Build final features concat transform, using output of all suggested experts.
+            Take the output columns from all suggested experts (except for 'Label'), and concatenate them
+            into one final 'Features' column that a trainer will accept.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.AutoML.SplitUtil.TrainValidateSplit(Microsoft.ML.MLContext,Microsoft.ML.IDataView,System.String)">
+            <summary>
+            Split the data into a single train/test split.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.AutoML.SweepableParam">
+            <summary>
+            Used to indicate suggested sweep ranges for parameter sweeping.
+            </summary>
+        </member>
+    </members>
+</doc>
